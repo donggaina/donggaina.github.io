@@ -47,7 +47,7 @@ $(function () {
     });
     //倒计时
     function getTime(){
-        var endTime= new Date('2016/02/16 00:00:00');
+        var endTime= new Date('2016/03/4 00:00:00');
         var nowTime = new Date();
         var t =endTime.getTime() - nowTime.getTime();
         var d=0;
