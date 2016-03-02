@@ -1136,3 +1136,12 @@ footer{
     top: 2px;
     border-color:transparent transparent transparent  #fff;
 }
+.timeArea{
+    font-size: 0;
+}
+.timeArea .sepline{
+    margin-right: 3px;
+}
+.timeArea span{
+    font-size: 14px;
+}

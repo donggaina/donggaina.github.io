@@ -1,9 +1,10 @@
 Zepto(function () {
     getTime();
     function getTime() {
-        var endTime = new Date('2016/02/2 00:00:00');
+        var endTime = new Date('2016/03/10 00:00:00');
         var nowTime = new Date();
         var t = endTime.getTime() - nowTime.getTime();
+        console.log("t:=="+t);
         var d = 0;
         var h = 0;
         var h2 = 0
@@ -13,8 +14,10 @@ Zepto(function () {
         var s2 = 0;
         if (t >= 0) {
             //d=Math.floor(t/1000/60/60/24);
-            h = Math.floor(t / 1000 / 60 / 60 % 24 / 10);
-            h2 = Math.floor(t / 1000 / 60 / 60 % 24 % 10);
+            h = Math.floor(t/1000/60/60/24%10);
+             console.log("h:=="+h);
+            h2 = Math.floor(t/1000/60/60%24%10);
+             console.log("h2:=="+h2);
 
             m = Math.floor(t / 1000 / 60 % 60 / 10);
             m2 = Math.floor(t / 1000 / 60 % 60 % 10);

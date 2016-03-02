@@ -46,23 +46,37 @@ $(function () {
         $(document).scrollTop(0);
     });
     //倒计时
-    function getTime(){
-        var endTime= new Date('2016/03/4 00:00:00');
+    getTime();
+    function getTime() {
+        var endTime = new Date('2016/03/10 00:00:00');
         var nowTime = new Date();
-        var t =endTime.getTime() - nowTime.getTime();
-        var d=0;
-        var h=0;
-        var m=0;
-        var s=0;
-        if(t>=0){
-            d=Math.floor(t/1000/60/60/24);
-            h=Math.floor(t/1000/60/60%24);
-            m=Math.floor(t/1000/60%60);
-            s=Math.floor(t/1000%60);
+        var t = endTime.getTime() - nowTime.getTime();
+        var d = 0;
+        var h = 0;
+        var h2 = 0
+        var m = 0;
+        var m2 = 0;
+        var s = 0;
+        var s2 = 0;
+        if (t >= 0) {
+            //d=Math.floor(t/1000/60/60/24);
+            h = Math.floor(t / 1000 / 60 / 60 / 24 % 10);
+            h2 = Math.floor(t / 1000 / 60 / 60 % 24 % 10);
+
+            m = Math.floor(t / 1000 / 60 % 60 / 10);
+            m2 = Math.floor(t / 1000 / 60 % 60 % 10);
+
+            s = Math.floor(t / 1000 % 60 / 10);
+            s2 = Math.floor(t / 1000 % 60 % 10);
         }
-        document.getElementById("timeArea").innerHTML = h +":"+m+":"+s;
-        $("#timeArea").text = h +":"+m+":"+s;
+        $("#q-hour").text(h);
+        $("#q-hour2").text(h2);
+        $("#q-min").text(m);
+        $("#q-min2").text(m2);
+        $("#q-sec").text(s);
+        $("#q-sec2").text(s2);
     }
-    setInterval(getTime,1000);
+
+    setInterval(getTime, 1000);
 });
 
