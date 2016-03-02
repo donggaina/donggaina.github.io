@@ -1,0 +1,690 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 960px;
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+    .food-item{
+        width: 30%;
+    }
+    .bulletin-fix{
+        width: 720px;
+    }
+    .menu-category-fix{
+        width: 720px;
+    }
+    .shopbulletin-section{
+        width: 220px;
+    }
+
+}
+@media (min-width: 1260px) {
+    .container {
+        width: 1180px;
+    }
+    .menu-category{
+        width: 885px;
+    }
+    .menu-category-fix{
+        width: 885px;
+    }
+    .shopbulletin-section{
+        width: 271px;
+    }
+}
+
+
+.shoptopbar{
+    height: 48px !important;
+    line-height: 48px !important;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.48) !important;
+}
+.shoptopbar .homepage{
+    background-color: transparent;
+}
+.shoptopbar .topbar-item:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+.shoptopbar .nav-item a{
+    color: rgba(210, 231, 249, 0.8);
+}
+.shoptopbar .nav-item a:hover{
+    color: #fff;
+}
+.shoptopbar .set-down{
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(204, 204, 204, 0.42);
+}
+.shoptopbar .set-down i{
+    position: absolute;
+    top:3px;
+    left: 2.5px;
+}
+/*头部结束*/
+/*box开始*/
+.shopguide{
+    background: url("../img/shop.jpg")  no-repeat;
+    background-size: cover;
+    height: 190px;
+    width: 100%;
+    height: 142px;
+    padding-top: 48px;
+
+}
+.shop-box{
+    height: 142px;
+    display: table;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+.shopguide-info,.shopguide-server{
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    position: relative;
+
+}
+.shopguide-info{
+    transition: background-color 0.3s ease;
+}
+.shopguide-info-extra{
+    opacity: 0;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    z-index: 5;
+    /*当height时 隐藏文本，否则点击下面区域 隐藏的div也会出现*/
+    overflow: hidden;
+    color: #666;
+    top:142px;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    height: 0px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+    transition: opacity 0.3s ease,height 0.4s ease;
+}
+.shopguide-info:hover .shopguide-info-extra{
+    opacity:1;
+    height: 348px;
+}
+.shopguide-info:hover{
+    background-color: rgba(255, 255, 255, 0.06);
+}
+.shop-introduction{
+    box-sizing: border-box;
+    border-bottom: 1px dashed #ddd;
+}
+.shop-score ,.shop-desc{
+    text-align: center;
+    padding: 10px 10px;
+    margin: 0px auto;
+}
+.shop-score {
+    float: left;
+
+}
+.shop-score p{
+    font-size: 20px;
+}
+.shop-desc{
+    float: right;
+    margin-top: 15px;
+}
+.shop-introduction h4{
+    margin-top: 5px;
+}
+.shop-desc i{
+    color: #ffd841;
+}
+.apart-line{
+    display: inline-block;
+    height: 55px;
+    padding: 10px;
+    margin-left: 10px;
+    border-right: 1px solid #ddd;
+    margin-top: 10px;
+}
+.shop-extra-item{
+    padding: 15px 0px;
+    border-top: 1px dashed #ddd;
+}
+.shop-extra-item:first-child{
+    border-top:none;
+}
+.shop-extra-item p:first-child{
+    margin-bottom: 8px;
+}
+.shop-extra-item:last-child{
+    text-align: center;
+ }
+.view-shopdesc{
+    background-color: #1e89e0;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+}
+.view-shopdesc a{
+    font-size: 16px;
+    color: #fff;
+}
+.score-color{
+    color: #ff2360;
+}
+
+
+.shopguide-server{
+    position: relative;
+    display: table;
+    height: 142px;
+    text-align: right;
+    padding: 0px 30px;
+    float: right;
+}
+.shopguide-info img{
+    float: left;
+    border-radius: 50%;
+    display: inline-block;
+}
+.shop-info-wrapper{
+    float: left;
+    margin: 0px 30px;
+}
+
+.shopguide-server>span{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 30px;
+}
+.shopguide-server>span h3{
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+.shopguide-server>span h4{
+    text-align: center;
+}
+.fav-shop p{
+    margin-top: 10px ;
+    text-align: center;
+    color: white;
+    width: 60px;
+}
+
+.shopguide-server .fav-shop i{
+    font-size: 26px;
+    color: white;
+}
+.shop-name{
+    margin-bottom: 10px;
+}
+.shop-info-wrapper i{
+    color: #ffeb98;
+}
+.shop-info-wrapper a{
+    color: #fff;
+    padding: 0px 5px;
+}
+.shop-range{
+    margin-top: 10px;
+}
+.shop-range .range-item{
+    line-height: 24px;
+    padding: 3px 6px;
+    background-color:rgba(255,255,255,.2);
+    border-radius: 2px 0 0 2px;
+    color: #ddd;
+    font-size: 12px;
+}
+.shop-scope{
+    /*height: 48px;*/
+    height: 57px;
+    line-height: 57px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    color: #333;
+    border-bottom: 1px solid #e6e6e6;
+}
+.shop-nav{
+    float: left;
+}
+.shop-main{
+    float: right;
+}
+.shop-nav a{
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 16px;
+    color: #333;
+
+}
+.shop-nav .shop-nav-focus{
+    color:  #0089dc ;
+}
+.order-focus{
+    color:  #0089dc !important;
+}
+.shop-nav-focus{
+    box-sizing:border-box ;
+    border-bottom: 3px solid #0089dc;
+}
+.shop-main a{
+    display: inline-block;
+    padding: 0px 15px;
+    color: #333;
+}
+.shop-scope span{
+    color: #cccccc;
+}
+.shop-main i{
+    color: #999;
+}
+.order-menu{
+    position: relative;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.order-menu i{
+    font-size: 16px;
+    line-height: 20px;
+    display: inline-block;
+    padding: 5px 7px;
+    float: left;
+    border: 1px solid #ddd;
+}
+.active{
+    background-color: #1e89e0 !important;
+    border-color: #1e89e0 !important;
+    color: #fff !important;
+}
+.order-menu i:first-child{
+    border-right: none;
+}
+.order-menu i:last-child{
+    border-left: none;
+}
+
+.box-shop{
+    margin-top: 10px;
+    position: relative;
+}
+.shopguide-box{
+    width: 100%;
+    position: relative;
+}
+.shopguide-left{
+    float: left;
+    width: 75%;
+}
+.menu-category{
+    background-color: white;
+    padding: 10px 20px 5px;
+    position: relative;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+}
+.menu-category a{
+    display: inline-block;
+    width: 18%;
+    padding: 3px 10px;
+    margin: 3px;
+    color: #666;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-radius: 3px;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: background-color 0.1s ease;
+}
+.menu-category a:hover{
+    background-color: #eee;
+}
+.food-block{
+    position: relative;
+    width: 102%;
+    margin-top: 15px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.food-block h3{
+    font-size: 18px;
+    padding-left: 10px;
+    margin-bottom: 8px;
+}
+.food-item{
+    float: left;
+    background-color: white;
+    width: 48%;
+    height: 100px;
+    position: relative;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    margin-right: 2%;
+
+}
+
+.food-item img{
+    float: left;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+.food-content{
+    float: left;
+    margin-left: 10px;
+    padding: 10px 20px;
+    position: relative;
+}
+.food-content .food-name{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.food-content i{
+    color: #ffc30c;
+}
+.food-content h4{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.food-content h4 span{
+    color: #999;
+}
+.start-num{
+    margin: 0px 3px;
+}
+.food-content .f-p,.food-content .food-price{
+
+    color: #f74342;
+    font-weight: 600;
+    font-size: 14px;
+}
+.food-btn{
+    position: absolute;
+    right: 20px;
+    bottom: 12px;
+
+}
+.food-btn button{
+    border: none;
+    display: inline-block;
+    line-height: 24px;
+    background-color: #1e89e0;
+    border-radius: 6px;
+    color: #fff;
+    font-family:inherit;
+    cursor: pointer;
+}
+.food-btn2{
+    display: none;
+}
+.food-item .cart-amount input,.food-item .cart-amount>span{
+    line-height: 24px;
+    width: 26px;
+    height: 24px;
+
+}
+/*.food-btn2 span{
+    visibility: visible;
+}
+.food-item .cart-amount>span{
+    visibility: visible;
+}*/
+.food-item .cart-amount span:first-child{
+    border-top-left-radius:50%;
+    border-bottom-left-radius:50%;
+}
+.food-item .cart-amount span:last-child{
+    border-top-right-radius:50%;
+    border-bottom-right-radius:50%;
+}
+
+/*通告*/
+.shopbulletin-section{
+    background-color: #fff;
+    box-sizing: border-box;
+    /*width: 271px;*/
+}
+
+.shopguide-right{
+    float: right;
+    width: 23%;
+    box-sizing: border-box;
+    right: 0px;
+    position: absolute;
+}
+.bulletin-content{
+    padding: 20px 15px;
+    line-height: 26px;
+    border-bottom: 1px dashed #e6e6e6;
+}
+.bulletin-title{
+   padding-left: 15px;
+    background-color: #0089dc;
+}
+.shopbulletin-section h3{
+    line-height: 35px;
+    font-size: 18px;
+    padding: 3px 0px;
+    color: white;
+}
+.bulletin-tips{
+    padding: 20px 15px 20px;
+    border-bottom: 1px dashed #e5e5e5;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.bulletin-qrcode{
+    border: 1px solid #e6e6e6;
+    margin: 0px auto;
+    font-size: 12px;
+    color: #999;
+    position: relative;
+    width: 180px;
+    box-sizing: border-box;
+}
+.qrcode-word{
+    margin-left: 5px;
+}
+.qrcode-word,.qrcode-icon{
+    float: left;
+    padding: 8px;
+}
+.qrcode-word h5{
+    color: #ff445f;
+}
+.qrcode-icon{
+    position: relative;
+}
+.qrcode-icon i.fa-qrcode{
+    font-size: 32px;
+}
+.qrcode-icon i.fa-caret-down{
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    transform: translate(-50%, -50%);
+}
+
+.payment-tips{
+    padding: 20px 15px 30px;
+    position: relative;
+}
+.payment-tips >div{
+    display: inline-block;
+}
+.payment-tips .pay-nav{
+    width: 22px;
+    color: #fff;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 50%;
+    background-color: #F74342;
+    text-align: center;
+    font-size: 12px;
+}
+.pay-way{
+    position: absolute;
+    padding: 0px 10px;
+}
+.bulletin-qrcode-img{
+    position: absolute;
+    display: none;
+    width: 180px;
+    text-align: center;
+    box-sizing: border-box;
+    top:50px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-top: none;
+    z-index: 10;
+    height: 180px;
+
+}
+.bulletin-tips img{
+    width: 160px;
+    margin-top: 10px;
+
+}
+.bulletin-tips:hover .bulletin-qrcode-img{
+    display: block;
+}
+/*固定框添加类样式*/
+.menu-category-fix{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
+}
+.bulletin-fix{
+    position: fixed;
+    top: 10px;
+    z-index: 10;
+}
+
+
+.menu-category-active{
+    background-color: #1e89e0;
+    color: #fff !important;
+}
+
+.shopside-cart{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    z-index: 60;
+    background-color: #fff;
+}
+.cart-footer{
+    height: 46px;
+    line-height: 46px;
+    box-shadow: 0 1px 3px #2c2c2c;
+    position: relative;
+    display: none;
+}
+#empty-shopcart{
+    display: block;
+}
+
+.cart-sum{
+    color: white;
+    width: 200px;
+    background-color: #2c2c2c;
+    display: inline-block;
+    /*font-size: 20px;*/
+    height: 46px;
+    font-size: 20px;
+}
+.cart-sum .symbol{
+    font-size: 14px;
+    margin-right: -6px;
+}
+.cart-money{
+    margin-left: 20px;
+}
+.cart-footer i.fa-shopping-cart{
+    font-size: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.btn{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+.cart-cheakout{
+    background-color: #51d862;
+    width: 120px;
+}
+.cart-choose{
+    display: none;
+}
+.cart-choose .cart-cheakout{
+    background-color: #679fd8;
+    width: 320px;
+    left: 0px;
+}
+.cart-sum .pricetotal{
+    color: #f74342;
+}
+.cart-footer-icon{
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+}
+.cart-sum .total-number{
+    color: #f74342;
+    position: absolute;
+    display: inline-block;
+    left: 18px;
+    top:10px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    background-color: #F74342;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sidebarcart-caption .clear-cart{
+    color: #1e89e0;
+    font-size: 12px;
+    float: right;
+    line-height: 24px;
+}
+
+.shopcart-basket .cart-basket{
+    padding: 0px 12px;
+}
+.cart-sum #packup{
+    vertical-align: middle;
+    color: white;
+    font-size: 15px;
+    margin-right: 20px;
+}
+

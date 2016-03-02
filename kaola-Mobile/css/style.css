@@ -1,0 +1,367 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+a,a:hover{
+    color: #333;
+}
+.f-cb{
+    zoom: 1;
+}
+h1, h2, h3, h4, h5, h6, em, strong, b{
+    font-weight: normal;
+}
+html{
+    font-size: 62.5%;
+}
+body, textarea, input, button, select, keygen, legend{
+    font:1.2rem/1.5 "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB",
+    \5FAE\8F6F\96C5\9ED1,tahoma,simsun,sans-serif
+}
+.f-fl{
+    float: left;
+}
+.f-fr{
+    float: right;
+}
+.f-cb:after{
+    content: "";
+    display: block;
+    overflow: hidden;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+img{
+    vertical-align: middle;
+}
+/*头部*/
+.m-topbar{
+    height: 50px;
+    line-height: 50px;
+    width:100%;
+    background-color: #d22147;
+    position: relative;
+}
+.m-goweb{
+    position: absolute;
+    left: 12px;
+    color: #fff;
+    font-size: 12px;
+}
+.icon1{
+    background: url("../img/icon1.png") no-repeat;
+    background-size: 500px;
+}
+.icon2{
+    background: url("../img/icon2.png") no-repeat ;
+    background-size: 500px;
+}
+
+.m-topbar .tit{
+    display: block;
+    width: 116px;
+    height: 24px;
+    margin: 0 auto;
+    background-position: -252px -335px;
+    position: absolute;
+    left: 50%;
+    top: 13px;
+    margin-left: -50px;
+}
+
+.m-topbar .u-menu{
+    width: 40px;
+    height: 46px;
+    display: inline-block;
+    position: absolute;
+    background-position: -399px -462px;
+    right: 0;
+    top:4px;
+}
+.m-nav{
+    height: 50px;
+    background-color: #f3f3f3;
+    width: 100%;
+}
+.m-nav .nav{
+    width: 25%;
+    text-align: center;
+}
+.m-nav .nav .icon2{
+    display: inline-block;
+    margin-top: 5px;
+}
+.u-index{
+    width: 32px;
+    height: 40px;
+    background-position: -214px -505px;
+}
+.u-cart{
+    width: 32px;
+    height: 40px;
+    background-position: -295px -505px;
+}
+.u-orders{
+    width: 42px;
+    height: 40px;
+    background-position:-368px -505px;
+}
+.u-coupon{
+    width: 50px;
+    height: 40px;
+    background-position:-445px -505px;
+}
+*{
+    box-sizing: border-box;
+}
+/*中间*/
+.m-gb{
+    position: relative;
+    background-color: #efefef;
+    min-height: 100%;
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    zoom: 1;
+}
+.m-slider{
+    margin-bottom: 10px;
+    /*background-color: #fff;*/
+    overflow: hidden;
+}
+.m-single-img{
+    margin-bottom: 10px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+    padding-top: 70.3125%;
+}
+.m-img-wrapper{
+    position: relative;
+}
+.m-img-wrapper img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+.m-single-img img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+/*全球精选*/
+.m-globalpick .list{
+    background-color: #fff;
+}
+.m-globalpick .u-tit{
+    border-bottom: 1px solid #ddd;
+    padding: 9px 10px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.u-icon{
+    width: 4px;
+    height: 15px;
+    margin-right: 6px;
+    display: inline-block;
+    background-position: -54px -236px;
+}
+.m-onsale a{
+    display: block;
+    border-top: 1px solid #ddd;
+    margin-left: 10px;
+    height: 120px;
+    padding: 10px 10px 10px 0;
+}
+.m-onsale a.first{
+    border-top: none;
+}
+.m-onsale .m-pic{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    float: left;
+}
+.m-onsale .m-pic img{
+    width: 100%;
+    height: 100%;
+}
+.m-onsale .pro-info{
+    margin-left: 103px;
+    overflow: hidden;
+}
+.u-brand{
+    font-size: 12px;
+    color: #666;
+    line-height: 16px;
+    white-space: nowrap;
+}
+.u-brand img{
+   width: 15px;
+    height: 15px;
+    margin-right: 6px;
+}
+.m-onsale .pro-tit{
+    margin: 6px 0;
+    max-height: 36px;
+    line-height: 18px;
+    color: #333;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box !important;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.m-onsale .curprice{
+    font-size: 20px;
+    white-space: nowrap;
+    color: #d22147;
+    line-height: 1.15;
+}
+.m-onsale .curprice .symbol{
+    font-size: 12px;
+}
+.m-onsale .curprice .dec{
+    font-size: 1.5rem;
+}
+.m-onsale .discount{
+    margin-left: 14px;
+    position: relative;
+    box-sizing: border-box;
+    line-height: 16px;
+    height: 16px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #d22147;
+    border-radius: 0px 3px 3px 0;
+    padding:2px 4px 2px 2px;
+    vertical-align:4px;
+}
+.discount .arrow{
+    border:9px solid;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    top:0px;
+    left: -18px;
+    border-color: transparent #d22147 transparent  transparent ;
+}
+.m-onsale .marprice{
+    color: #ccc;
+    line-height: 12px;
+    font-size: 1.2rem;
+    margin-top: 2px;
+}
+.m-globalpick .list span{
+    margin-right: -3px;
+}
+.pro-info .tit-info{
+    color: #d22147;
+}
+.nomore-data{
+    background-color: #fff;
+    padding: 15px 0;
+    font-size: 1.3rem;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+.m-footer {
+    font-size: 13px;
+    line-height: 18px;
+    padding: 15px;
+    background-color: #efefef;
+}
+.m-footer .sep{
+    margin: 0px 8px;
+}
+.m-footer .about{
+    padding-top: 20px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+.m-goTop{
+    position: fixed;
+    right: 20px;
+    bottom: 90px;
+    z-index: 50;
+    cursor: pointer;
+}
+.icon-goTop{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.8);
+    border: 1px solid #ccc;
+    position: relative;
+    text-align: center;
+}
+.m-goTop .icon-goTop .up{
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    width: 11px;
+    height: 11px;
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+    transform: rotate(45deg);
+}
+.m-goTop .icon-goTop .desc{
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 100%;
+    line-height: 12px;
+    font-size: 12px;
+    text-align: center;
+    transform: scale(0.8)
+}
+.m-fixedtoweb{
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    z-index: 50;
+}
+.m-fixedtoweb a img{
+    width: 40px;
+    height: 40px;
+}
+.hide{
+    display: none;
+}
+.m-download{
+    position: relative;
+    zoom:1;
+    display:block;
+}
+.m-download img{
+    width:100%;
+}
+.close{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/close.png");
+    background-size: 16px 16px;
+}

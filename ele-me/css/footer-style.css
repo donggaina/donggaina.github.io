@@ -1,0 +1,124 @@
+/*脚步样式*/
+
+.ele-footer{
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+}
+.footer-link{
+    margin-top: 30px;
+}
+.footer-item{
+    float: left;
+    width: 15%;
+}
+.footer-item-title{
+    font-size: 14px;
+    line-height: 30px;
+}
+.footer-item ul li a{
+    font-size: 12px;
+    color: #999;
+    line-height: 24px;
+    display: block;
+    width: 50%;
+}
+.footer-contact{
+    font-size: 14px;
+    width: 23%;
+    float: left;
+    padding-left:3% ;
+    padding-right: 10px;
+    border-left: 1px solid #e6e6e6;
+}
+.footer-contact>div{
+    color: #666;
+    font-size: 14px;
+    line-height: 35px;
+}
+.footer-contact a{
+    color: #666;
+}
+.footer-contact .about-us i{
+    font-size: 22px;
+    color: #999;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+i.fa-weixin:hover{
+    color: #4ac785;
+}
+i.fa-weibo:hover{
+    color: #fb545f;
+}
+i.fa-renren:hover{
+    color: #47a9f7;
+}
+.footer-mobile{
+    width: 25%;
+    float: right;
+    overflow: hidden;
+}
+.mobile-content{
+    margin-top: 20px;
+}
+.footer-mobile img{
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-right: 20px;
+}
+.mobile-content h3{
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    line-height: 30px;
+}
+.mobile-content h5{
+    color: #666;
+    font-size: 12px;
+    margin: 3px 0 10px;
+}
+.footer-end{
+    margin-top: 60px;
+    font-size: 12px;
+    text-align: center;
+    color: #999;
+    font-family: Palatino,Optima,Georgia,serif;;
+}
+.footer-end a{
+    color: #999;
+}
+.footer-police{
+    text-align: center;
+    padding: 7px 0px 10px;
+}
+.footer-police img{
+    width: 87px;
+    height: 30px;
+    vertical-align: middle;
+}
+.footer-contact .about-us{
+    position: relative;
+}
+
+.icon-wechat{
+    color: #999;
+    position: absolute;
+    z-index: 8;
+    display: none;
+    padding: 8px;
+    border: 1px solid #f5f5f5;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.5);
+    text-align: center;
+}
+.about-us .icon-wechat{
+    bottom:40px;
+    left: 18px;
+}
+.about-us .icon-wechat img{
+    width: 120px;
+}
+.weixin-chat{
+    display: inline-block;
+}

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content=black”/>
+    <meta content="telephone=no" name="format-detection"/>
+    <title>手机穷游网 旅游攻略 出境旅行指南</title>
+    <link rel="stylesheet" href="css/qy-style.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/icon.css">
+</head>
+<body>
+<section class="qui-page" id="qy-index">
+    <header class="q-header q-cf">
+        <h1 class="q-log">穷游</h1>
+        <div class="q-person">
+            <a href="#">
+                <i class="fa fa-user"></i>
+                <span class="q-self">我的</span>
+            </a>
+        </div>
+    </header>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a href="#"><img src="img/swipe1.jpg" alt=""></a></li>
+            <li class="swiper-slide"><a href="#"><img src="img/swiper2.jpg" alt=""></a></li>
+            <li class="swiper-slide"><a href="#"><img src="img/swiper3.jpg" alt=""></a></li>
+        </ul>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="q-search">
+        <input type="text" placeholder="搜索目的地／游记攻略／问答" id="qy-input">
+    </div>
+    <ul class="q-list q-cf">
+        <li class="q-item">
+            <a href="#" class="qy-a qy-a1">
+                <span class="q-icon">
+                    <i class="fa fa-map-marker"></i>
+                    <span class="q-dir0">周边</span>
+                </span>
+                <span class="q-dir">目的地</span>
+            </a>
+        </li>
+        <li class="q-item">
+            <a href="#" class="qy-a qy-a2">
+                <span class="q-icon"><i class="fa fa-calendar-check-o"></i></span>
+                <span class="q-dir">行程</span>
+            </a>
+        </li>
+        <li class="q-item">
+            <a href="#" class="qy-a qy-a3">
+                <span class="q-icon"><i class="fa fa-tree"></i></span>
+                <span class="q-dir">游记</span>
+            </a>
+        </li>
+        <li class="q-item">
+            <a href="#" class="qy-a qy-a4">
+                <span class="q-icon"><i class="fa fa-bank"></i></span>
+                <span class="q-dir">商城</span>
+            </a>
+        </li>
+        <li class="q-item">
+            <a href="#" class="qy-a qy-a5">
+                <span class="q-icon"><i class="fa fa-question-circle"></i></span>
+                <span class="q-dir">提问</span>
+            </a>
+        </li>
+        <li class="q-item">
+            <a href="#" class="qy-a qy-a6">
+                <span class="q-icon"><i class="fa fa-hotel"></i></span>
+                <span class="q-dir">酒店</span>
+            </a>
+        </li>
+        <li class="q-item">
+            <a href="#" class="qy-a qy-a7">
+                <span class="q-icon"><i class="fa fa-users"></i></span>
+                <span class="q-dir">结伴</span>
+            </a>
+        </li>
+        <li class="q-item qy-item-more" id="item-more">
+            <div class="qy-a qy-a11">
+                <span class="q-icon">
+                    <i class="fa fa-caret-down"></i>
+                </span>
+                <span class="q-dir">更多</span>
+            </div>
+        </li>
+        <li class="q-item qy-toggle">
+            <a href="#" class="qy-a qy-a8">
+                <span class="q-icon">
+                    <i class="fa fa-plane"></i>
+                </span>
+                <span class="q-dir">机票</span>
+            </a>
+        </li>
+        <li class="q-item qy-toggle">
+            <a href="#" class="qy-a qy-a9">
+                <span class="q-icon"><i class="fa fa-tag"></i></span>
+                <span class="q-dir">穷游锦囊</span>
+            </a>
+        </li>
+        <li class="q-item qy-toggle">
+            <a href="#" class="qy-a qy-a10">
+                <span class="q-icon"><i class="fa fa-home"></i></span>
+                <span class="q-dir">生活实验室</span>
+            </a>
+        </li>
+        <div class="q-item qy-toggle" id="q-up">
+            <div class="qy-a qy-a11">
+                <span class="q-icon"><i class="fa fa-caret-up"></i></span>
+                <span class="q-dir">收起</span>
+            </a>
+        </div>
+    </ul>
+    <section class="q-newWorld">
+        <h3 class="q-tit">最新世界商城
+            <a href="#" class="q-more">更多</a>
+        </h3>
+        <div class="new-list q-cf">
+            <artilce class="list-left">
+                <a href="#">
+                    <div class="l-inner">
+                        <div class="flip-box q-cf">
+                            <div class="flip-item">
+                                <span id="q-hour">0</span>
+                                <span id="q-hour2">0</span>
+                            </div>
+                            <div class="sep">:</div>
+                            <div class="flip-item">
+                                <span id="q-min">0</span>
+                                <span id="q-min2">0</span>
+                            </div>
+                            <div class="sep">:</div>
+                            <div class="flip-item">
+                                <span id="q-sec">0</span>
+                                <span id="q-sec2">0</span>
+                            </div>
+
+                        </div>
+                        <img src="img/l-t.jpg" alt="" class="l-pic">
+                        <p class="l-rmd">【+1元送日签】天津直飞冲绳自由行</p>
+                        <p class="l-price"><em>3039</em>元起</p>
+                        <span class="l-order">立即订购</span>
+                    </div>
+                </a>
+            </artilce>
+            <div class="list-right">
+                <div class="q-r1 r-item">
+                    <a href="#" class="r-item1">
+                        <h3>有门票</h3>
+                        <p>有意思</p>
+                        <i class="item-bg bg1"></i>
+                    </a>
+                    <a href="#" class="r-item2">
+                        <h3>签证</h3>
+                        <p>有保障</p>
+                        <i class="item-bg bg2"></i>
+                    </a>
+
+                </div>
+                <div class="q-r2 r-item">
+                    <a href="#" class="r-item11">
+                        <h3>自由行</h3>
+                        <p>最优惠</p>
+                        <i class="item-bg bg11"></i>
+                    </a>
+                    <a href="#" class="r-item22">
+                        <h3>WIFI/电话卡</h3>
+                        <p>全球覆盖</p>
+                        <i class="item-bg bg22"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="tra-guide">
+        <h3 class="q-tit">游记攻略
+            <a href="#" class="q-more">更多</a>
+        </h3>
+        <div class="tra-group">
+            <div class="y-group" style="display:block">
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y1.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">回馈穷游：在线申请新西兰签证攻略，最全面的在线办理方法。不懂的可以跟帖问我</p>
+                        <div class="y-link">
+                            <img src="img/ys1.jpg" alt="">
+                            <b>水里的小孩</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>123
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y2.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">回馈穷游：在线申请新西兰签证攻略，最全面的在线办理方法。不懂的可以跟帖问我</p>
+                        <div class="y-link">
+                            <img src="img/ys2.jpg" alt="">
+                            <b>水里的小孩</b>
+                        <span class="fav">
+                             <i class="fa fa-heart"></i>54
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y3.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">回馈穷游：在线申请新西兰签证攻略，最全面的在线办理方法。不懂的可以跟帖问我</p>
+                        <div class="y-link">
+                            <img src="img/ys3.jpg" alt="">
+                            <b>水里的小孩</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>142
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y4.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">【申根签证】5.20北京冰岛签证中心送签，无电调无面试6.3出签~（提供百度云链接下载翻译模板、附北欧完整游记链接）</p>
+                        <div class="y-link">
+                            <img src="img/ys4.jpg" alt="">
+                            <b>Clytze915</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>142
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y5.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">上海领区意大利申根签进度交流&amp;攻略分享（1楼汇总送签出签出行时间，6楼签证攻略分享）</p>
+                        <div class="y-link">
+                            <img src="img/ys5.jpg" alt="">
+                            <b>relyconan</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>142
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y6.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">在庆州跨个年——短途韩国釜山庆州（更完）</p>
+                        <div class="y-link">
+                            <img src="img/ys6.jpg" alt="">
+                            <b>farname</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>16
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y7.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">大家帮大家 | 出国旅行，英语小白该做些什么？</p>
+                        <div class="y-link">
+                            <img src="img/ys7.jpg" alt="">
+                            <b>路刻社</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>10
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y8.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">2015全年总结＋2015延时视频合辑</p>
+                        <div class="y-link">
+                            <img src="img/ys8.jpg" alt="">
+                            <b>saviourwin</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>46
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y9.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">再这样拍下去，就真的狗带了...</p>
+                        <div class="y-link">
+                            <img src="img/ys9.jpg" alt="">
+                            <b>路刻社</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>142
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y10.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">谢谢和菜菜｜日本甜品喫茶攻略，有这份就够啦～20家京都甜品＋20家北海道甜品</p>
+                        <div class="y-link">
+                            <img src="img/ys10.jpg" alt="">
+                            <b>谢谢菜菜</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>21
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y11.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">【闺蜜携手游之畅游台湾】——花莲，清境，台北11天10晚人品爆发之旅</p>
+                        <div class="y-link">
+                            <img src="img/ys11.jpg" alt="">
+                            <b>行走的卡西莫多</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>182
+                        </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="y-group">
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y1.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">回馈穷游：在线申请新西兰签证攻略，最全面的在线办理方法。不懂的可以跟帖问我</p>
+                        <div class="y-link">
+                            <img src="img/ys1.jpg" alt="">
+                            <b>水里的小孩</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>123
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y2.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">回馈穷游：在线申请新西兰签证攻略，最全面的在线办理方法。不懂的可以跟帖问我</p>
+                        <div class="y-link">
+                            <img src="img/ys2.jpg" alt="">
+                            <b>水里的小孩</b>
+                        <span class="fav">
+                             <i class="fa fa-heart"></i>54
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y3.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">回馈穷游：在线申请新西兰签证攻略，最全面的在线办理方法。不懂的可以跟帖问我</p>
+                        <div class="y-link">
+                            <img src="img/ys3.jpg" alt="">
+                            <b>水里的小孩</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>142
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y4.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">【申根签证】5.20北京冰岛签证中心送签，无电调无面试6.3出签~（提供百度云链接下载翻译模板、附北欧完整游记链接）</p>
+                        <div class="y-link">
+                            <img src="img/ys4.jpg" alt="">
+                            <b>Clytze915</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>142
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y5.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">上海领区意大利申根签进度交流&amp;攻略分享（1楼汇总送签出签出行时间，6楼签证攻略分享）</p>
+                        <div class="y-link">
+                            <img src="img/ys5.jpg" alt="">
+                            <b>relyconan</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>142
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y6.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">在庆州跨个年——短途韩国釜山庆州（更完）</p>
+                        <div class="y-link">
+                            <img src="img/ys6.jpg" alt="">
+                            <b>farname</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>16
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y7.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">大家帮大家 | 出国旅行，英语小白该做些什么？</p>
+                        <div class="y-link">
+                            <img src="img/ys7.jpg" alt="">
+                            <b>路刻社</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>10
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y8.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">2015全年总结＋2015延时视频合辑</p>
+                        <div class="y-link">
+                            <img src="img/ys8.jpg" alt="">
+                            <b>saviourwin</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>46
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y9.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">再这样拍下去，就真的狗带了...</p>
+                        <div class="y-link">
+                            <img src="img/ys9.jpg" alt="">
+                            <b>路刻社</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>142
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y10.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">谢谢和菜菜｜日本甜品喫茶攻略，有这份就够啦～20家京都甜品＋20家北海道甜品</p>
+                        <div class="y-link">
+                            <img src="img/ys10.jpg" alt="">
+                            <b>谢谢菜菜</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>21
+                        </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="tra-item q-cf">
+                    <img src="img/y11.jpg" alt="" class="y-img">
+                    <div class="y-cont">
+                        <p class="y-tit">【闺蜜携手游之畅游台湾】——花莲，清境，台北11天10晚人品爆发之旅</p>
+                        <div class="y-link">
+                            <img src="img/ys11.jpg" alt="">
+                            <b>行走的卡西莫多</b>
+                        <span class="fav">
+                            <i class="fa fa-heart"></i>182
+                        </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="tra-more" id="qy-more">展开更多</div>
+        </div>
+    </section>
+    <footer class="qy-footer">
+        <p class="q-f1"></p>
+        <div class="q-f2">
+            <a href="#">手机版</a>
+            <a href="#">电脑版</a>
+            <a href="#">APP</a>
+            <a href="#">意见反馈</a>
+        </div>
+        <p class="q-f3">2004-2015 © 穷游网™ 京ICP备12003524号</p>
+
+    </footer>
+    <div class="m-goTop hide" id="qy-goTop">
+        <div class="icon-goTop">
+            <i class="up"></i>
+            <p class="desc">顶部</p>
+        </div>
+    </div>
+
+</section>
+<div class="qy-search" id="qy-search">
+    <div class="search-bar">
+        <form action="">
+            <a href="#" class="go-back" id="goback"><i class="fa fa-arrow-left"></i></a>
+            <input type="text" placeholder="搜索">
+            <a href="#" class="search-btn">搜索</a>
+        </form>
+    </div>
+
+</div>
+
+<script src="js/swiper.min.js"></script>
+<script src="js/zepto.js"></script>
+<script src="js/yqer.js"></script>
+
+<script>
+    (function () {
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: 3500,
+            slidesPerView: 1,
+            loop: true
+        });
+    })();
+</script>
+</body>
+</html>
