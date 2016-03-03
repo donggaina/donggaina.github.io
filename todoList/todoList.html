@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>todoList</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+<div class="navbar">
+    <i class="fa fa-tasks"></i>&nbsp&nbspToDoList
+</div>
+<div class="container">
+    <div class="toDo">
+        <input type="text" class="newToDo" id="inputWapper" placeholder="+添加一个新任务"/>
+    </div>
+    <ul class="taskList" id="newList">
+    </ul>
+    <div class="doneTask" id="TaskDone">
+        <a href="javascript:;" id="finishTask"><span class="finsihNum" id="numFinish">0</span>个已完成的任务</a>
+    </div>
+    <ul class="taskList" id="doneList">
+    </ul>
+</div>
+<script src="./js/jquery-1.11.3.min.js"></script>
+<script id="templateLi" type="text/template">
+    <li>
+        <div class="taskWapper">
+            <a href="javascript:;" class="check"> <span class="checkBox"></span></a>
+            <span class="text">{{title}}</span>
+            <a href="javascript:;" class="close"><i class="fa fa-times "></i></a>
+        </div>
+    </li>
+</script>
+
+<script type="text/javascript" src="./js/app2.js"></script>
+
+</body>
+</html>
