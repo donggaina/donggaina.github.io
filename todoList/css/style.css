@@ -89,11 +89,15 @@ body{
     left: 1px;
 }
 .text{
+    width: 85%;
     display: inline-block;
     height: 38px;
     font-size: 19px;
     color: rgba(42, 43, 42, 0.91);
     margin-left: 30px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
 }
 .done .text{
     text-decoration: line-through;
