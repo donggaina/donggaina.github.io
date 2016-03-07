@@ -84,8 +84,6 @@ Zepto(function () {
     });
     $("#qy-goTop")[CLICK](function () {
         $(document.body).scrollTop(0);
-
-
     });
 
     $(window).scroll(function () {

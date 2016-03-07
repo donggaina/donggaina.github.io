@@ -55,7 +55,7 @@ $(function () {
             $(this).val(""); //清空input的数据
         }
     });
-    // 事件委托
+    // 事件委托 勾选待办事件
     $(document).delegate(".checkBox", "click", function () {
         var $li = $(this).parent().parent().parent();
         //$li.remove();

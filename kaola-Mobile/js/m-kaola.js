@@ -1,4 +1,4 @@
-$(function(){
+Zepto(function(){
     $('.img-slider').bxSlider({
         auto: true,
         autoControls: true,
@@ -20,7 +20,6 @@ $(function(){
         }
     });
    $("#goTop")[CLICK](function(){
-       console.log(CLICK);
         $(document).scrollTop(0);
     });
     $("#close")[CLICK](function(){

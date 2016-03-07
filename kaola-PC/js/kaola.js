@@ -43,7 +43,7 @@ $(function () {
     });
 
     $("#srcolltop").click(function () {
-        $(document).scrollTop(0);
+        $('html,body').animate({scrollTop:0}, 1200);
     });
     //倒计时
     getTime();

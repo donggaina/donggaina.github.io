@@ -51,6 +51,9 @@ img{
     background-color: #d22147;
     position: relative;
 }
+.m-topbar a{
+    color:#fff;
+}
 .m-goweb{
     position: absolute;
     left: 12px;
