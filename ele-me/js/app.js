@@ -14,14 +14,11 @@ $(function () {
     });
 
     //footer位置微信图片的显现
-    $("#footer-weixin").mouseover(function () {
-        $("#icon-wechat").css("display", "block");
-
+   
+    $("#footer-weixin").hover(function () {
+        $("#icon-wechat").toggleClass("icon-wechat-hover");
     });
-    $("#footer-weixin").mouseout(function () {
-        $("#icon-wechat").css("display", "none");
-
-    });
+   
     //遍历购物车中的数量和价格和
     var binding = function () {
         var $pn = $(".total-number");
@@ -75,8 +72,6 @@ $(function () {
         binding();
     });
 
-
-
     //点击清空购物车，购物车内容消失
     $("#clear-cart").click(function () {
         var $dd = $(this).parent().next().children().children("li");
@@ -92,7 +87,6 @@ $(function () {
 
     //实时获取滚轮的位置，固定固定框
     $(window).scroll(function () {
-
         if ($(document).scrollTop() > "325") {
             $("#fix-bar").addClass("fix-bar");
             $("#place_search").css("display", "block");
@@ -105,8 +99,8 @@ $(function () {
     });
 
 //点击返回顶端按钮
-    $("#goback-top").click(function () {
-        $(document).scrollTop(0);
+    $("#goback-top").click(function () {    
+		$('html,body').animate({scrollTop:0},600);
     });
 
     $(document).delegate(".rmd-block", "mouseover", function (event) {

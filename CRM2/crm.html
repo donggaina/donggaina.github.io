@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>畅捷通客户管家</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left clearfix fl">
+            <div class="header-menu fl">
+                <a href="#" class="mainmenu icon"></a>
+            </div>
+            <div class="header-log fl">
+                <a href="#" clss="mainlog">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="header-right fr">
+            <ul class="clearfix">
+                <li><a href="#">凯盛科技</a></li>
+                <li>
+                    <a href="#">
+                        <img class="avater" src="img/m.png32.jpg" alt="">
+                        <span>1017123593</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="double-icon"></span>
+                        <span>激活和购买</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div id="app">
+        <router-view></router-view>
+    </div>
+    <script type="vue/template" id="home">
+        <!-- 左侧start -->
+        <div class="lefeSider">
+            <ul>
+                <li class="menu-active" id="homepage">
+                    <a v-link="{ path: '/homepage2'}">
+                        <span class="icon homeIcon"></span>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li><a v-link="{ path: '/clientPage'}"><span class="icon personIcon"></span><span>客户</span></a></li>
+                <li><a v-link="{ path: '/followpage'}"><span class="icon followIcon"></span><span>跟进</span></a></li>
+                <li><a v-link="{ path: '/remindpage'}"><span class="icon remindIcon"></span><span>代办</span></a></li>
+                <li><a href="#"><span class="icon infoIcon"></span><span>统计</span></a></li>
+                <li><a href="#"><span class="icon analysisIcon"></span><span>市场分析</span></a></li>
+            </ul>
+        </div>
+        <!-- 左侧end -->
+        <div class="homePage1">
+            <div class="appBox">
+                <div class="box-container">
+                    <h2 class="mainTit">
+             销售进展报告
+            <span>截止目前</span>
+            </h2>
+                    <!-- 客户为0时 -->
+                    <div class="chart-empty">
+                        <div class="add-client"></div>
+                    </div>
+                    <h2 class="mainTit clearfix">我关注客户的进展</h2>
+                    <div class="list-empty">
+                        <div class="care-client"></div>
+                        <a v-link="{path:'/clientPage'}" class="care-client"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script type="vue/template" id="homePage2">
+        <div class="lefeSider">
+            <ul>
+                <li class="menu-active" id="homepage">
+                    <a v-link="{ path: '/homepage2'}">
+                        <span class="icon homeIcon"></span>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li><a v-link="{ path: '/clientPage'}"><span class="icon personIcon"></span><span>客户</span></a></li>
+                <li><a v-link="{ path: '/followpage'}"><span class="icon followIcon"></span><span>跟进</span></a></li>
+                <li><a v-link="{ path: '/remindpage'}"><span class="icon remindIcon"></span><span>代办</span></a></li>
+                <li><a href="#"><span class="icon infoIcon"></span><span>统计</span></a></li>
+                <li><a href="#"><span class="icon analysisIcon"></span><span>市场分析</span></a></li>
+            </ul>
+        </div>
+        <!-- 左侧end -->
+        <div class="homePage2">
+            <div class="appBox">
+                <div class="box-container">
+                    <h2 class="mainTit">
+                销售进展报告
+                    <span>截止目前</span>
+                    </h2>
+                    <!-- 销售进展报告 -->
+                    <div class="char-content clearfix">
+                        <div class="whitebg">
+                            <ul class="listCont clearfix">
+                                <li class="chart-item clearfix">
+                                    <div class="label-con fl">
+                                        <span class="label-name">无</span>
+                                        <span class="label-count">
+                                    <span class="label-num">3</span>
+                                        <span>家</span>
+                                        </span>
+                                    </div>
+                                    <div class="chart-progress fl">
+                                        <p class="pro-bar"></p>
+                                    </div>
+                                </li>
+                                <li class="chart-item clearfix">
+                                    <div class="label-con fl">
+                                        <span class="label-name">出访</span>
+                                        <span class="label-count">
+                                 <span class="label-num">3</span>
+                                        <span>家</span>
+                                        </span>
+                                    </div>
+                                    <div class="chart-progress fl">
+                                        <p class="pro-bar"></p>
+                                    </div>
+                                </li>
+                                <li class="chart-item clearfix">
+                                    <div class="label-con fl">
+                                        <span class="label-name">意向</span>
+                                        <span class="label-count">
+                                 <span class="label-num">3</span>
+                                        <span>家</span>
+                                        </span>
+                                    </div>
+                                    <div class="chart-progress fl">
+                                        <p class="pro-bar"></p>
+                                    </div>
+                                </li>
+                                <li class="chart-item clearfix">
+                                    <div class="label-con fl">
+                                        <span class="label-name">报价</span>
+                                        <span class="label-count">
+                                 <span class="label-num">3</span>
+                                        <span>家</span>
+                                        </span>
+                                    </div>
+                                    <div class="chart-progress fl">
+                                        <p class="pro-bar"></p>
+                                    </div>
+                                </li>
+                                <li class="chart-item clearfix">
+                                    <div class="label-con fl">
+                                        <span class="label-name">成交</span>
+                                        <span class="label-count">
+                                 <span class="label-num">3</span>
+                                        <span>家</span>
+                                        </span>
+                                    </div>
+                                    <div class="chart-progress fl">
+                                        <p class="pro-bar"></p>
+                                    </div>
+                                </li>
+                                <li class="chart-item clearfix">
+                                    <div class="label-con fl">
+                                        <span class="label-name">暂时搁置</span>
+                                        <span class="label-count">
+                                 <span class="label-num">3</span>
+                                        <span>家</span>
+                                        </span>
+                                    </div>
+                                    <div class="chart-progress fl" id="pb0">
+                                        <p class="pro-bar"></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h2 class="mainTit clearfix">我关注客户的进展</h2>
+                    <!-- 我关注客户的进展 -->
+                    <div class="clientList">
+                        <ul>
+                            <li class="clearfix client-item">
+                                <!--头像-->
+                                <!--悬浮元素-->
+                                <div class="customerTag">报价</div>
+                                <div class="clearIcon icon"></div>
+                                <!-- 左侧头像 -->
+                                <div class="cLeft fl">
+                                    <img src="img/m.png32.jpg" alt="">
+                                </div>
+                                <div class="cRight fl">
+                                    <!--发布信息-->
+                                    <div class="pay-time">
+                                        <span class="u-name">我</span>
+                                        <span class="u-day">今天</span>
+                                        <span class="u-time">17:45</span>
+                                        <span class="u-week">周日</span>
+                                    </div>
+                                    <!--客户名称-->
+                                    <div class="clinet-name">
+                                        <a href="#" class="c-name">王晓明</a>
+                                        <a href="#" class="c-heart icon"></a>
+                                    </div>
+                                    <!-- 工作记录 -->
+                                    <p class="note-content">
+                                        <span>工作记录：</span>
+                                        <span class="moreLine">王先生有意向</span>
+                                    </p>
+                                    <div class="upload-pic">
+                                        <span><img src="img/1.jpg" alt=""></span>
+                                    </div>
+                                    <!--底部信息-->
+                                    <div class="listFoot ">
+                                        <div class="comment fr">
+                                            <span class="commentIcon icon"></span>评论 (
+                                            <span class="commentNum">2</span>)
+                                        </div>
+                                        <!--评论区-->
+                                        <div class="clearfix"></div>
+                                        <div class="comment-toggle hide">
+                                            <div class="commment-area clearfix">
+                                                <textarea class="textArea" rows="2" maxlength="300" placeholder="发表评论" id="" cols="30" rows="5"></textarea>
+                                                <h4 class="inpu4t-alert fl">你可以输入<span>300</span>个字</h4>
+                                                <div class="comm-btn fr">
+                                                    <span class="canclebtn">取消</span>
+                                                    <span class="savebtn">保存</span>
+                                                </div>
+                                            </div>
+                                            <!-- 回复 -->
+                                            <div class="reply">
+                                                <ul class="reply-list">
+                                                    <li class="reply-item clearfix">
+                                                        <a href="#" class="fl"><img src="img/1.jpg" alt=""></a>
+                                                        <div class="reply-msg fl">
+                                                            <p class="reply-p-t">
+                                                                <span class="reply-person">回复人</span>
+                                                                <span class="reply-time">回复时间</span>
+                                                            </p>
+                                                            <p class="reply-content">回复内容</p>
+                                                        </div>
+                                                        <a href="#" class="fr click-reply">回复</a>
+                                                    </li>
+                                                    <li class="reply-item clearfix">
+                                                        <a href="#" class="fl"><img src="img/1.jpg" alt=""></a>
+                                                        <div class="reply-msg fl">
+                                                            <p class="reply-p-t">
+                                                                <span class="reply-person">回复人</span>
+                                                                <span class="reply-time">回复时间</span>
+                                                            </p>
+                                                            <p class="reply-content">回复内容</p>
+                                                        </div>
+                                                        <a href="#" class="fr click-reply">回复</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script type="vue/template" id="clientPage">
+        <div class="lefeSider">
+            <ul>
+                <li>
+                    <a v-link="{ path: '/homepage2'}">
+                        <span class="icon homeIcon"></span>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li class="menu-active"><a v-link="{ path: '/clientPage'}"><span class="icon personIcon"></span><span>客户</span></a></li>
+                <li><a v-link="{ path: '/followpage'}"><span class="icon followIcon"></span><span>跟进</span></a></li>
+                <li><a v-link="{ path: '/remindpage'}"><span class="icon remindIcon"></span><span>代办</span></a></li>
+                <li><a href="#"><span class="icon infoIcon"></span><span>统计</span></a></li>
+                <li><a href="#"><span class="icon analysisIcon"></span><span>市场分析</span></a></li>
+            </ul>
+        </div>
+        <!-- 左侧end -->
+        <div class="client-page">
+            <div class="appBox">
+                <div class="box-container">
+                    <div class="navbar">
+                        <div class="fl">
+                            <h2 class="mainTit">
+                    我的客户
+                    <span>已收藏搜索的条件</span>
+                    </h2>
+                        </div>
+                        <div class="fr top-tool">
+                            <span id="filter-btn">筛选</span>|
+                            <span>新增</span>
+                        </div>
+                        <div class="fr search">
+                            <input type="text" placeholder="请输入客户名称进行查询">
+                            <span class="searchIcon"></span>
+                        </div>
+                    </div>
+                    <!-- 1.无客户状态 -->
+                    <div class="cilent-null" style="display: none">
+                        <div class="download-mobile">
+                            <a href="#">下载手机端应用</a>
+                        </div>
+                    </div>
+                    <!-- 客户筛选框 -->
+                    <div class="filter-frame hide" id="filter-frame">
+                        <div class="filter-header clearfix">
+                            <div class="filter-left fl">
+                                <div>已选条件</div>
+                                <div class="select-box">
+                                    <span>关注状态：</span>
+                                    <span>已经关注的</span>
+                                    <span class="icon clearbtn"></span>
+                                </div>
+                            </div>
+                            <div class="filter-right fr">
+                                <span class="collect">收藏</span>
+                                <span class="clear">清空</span>
+                            </div>
+                        </div>
+                        <div class="filter clearfix">
+                            <div class="filter-list">
+                                <div class="filter-item clearfix">
+                                    <div class="category fl">关注状态：</div>
+                                    <div class="c-condition fl">
+                                        <ul>
+                                            <li>已关注的</li>
+                                            <li>未关注的</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="filter-item clearfix">
+                                    <div class="category fl">业务员：</div>
+                                    <div class="c-condition fl">
+                                        <ul>
+                                            <li>1017112593</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="filter-item clearfix">
+                                    <div class="category fl">跟进时间：</div>
+                                    <div class="c-condition fl">
+                                        <ul>
+                                            <li>今天</li>
+                                            <li>本周</li>
+                                            <li>上周</li>
+                                            <li>本月</li>
+                                            <li>上月</li>
+                                            <li>本周</li>
+                                            <li>最近三月</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="filter-item clearfix">
+                                    <div class="category fl">多久未跟进：</div>
+                                    <div class="c-condition fl">
+                                        <ul>
+                                            <li>超1个月未跟进</li>
+                                            <li>超3个月未跟进</li>
+                                            <li>超半年未跟进</li>
+                                            <li>超1个年未跟进</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="filter-item clearfix">
+                                    <div class="category fl">客户类型：</div>
+                                    <div class="c-condition fl">
+                                        <ul>
+                                            <li>负责的</li>
+                                            <li>参与的</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fliter-setting">
+                                <a href="#" class="fr setting">
+                                    <span class="icon settingIcon"></span>
+                                    <span>筛选设置</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2.有客户状态 -->
+                    <div class="have-client">
+                        <div class="client-list">
+                            <div class="">
+                                <table class="table-header">
+                                    <tr>
+                                        <th width="8%">
+                                            关注
+                                        </th>
+                                        <th width="15%">客户名称</th>
+                                        <th width="20%">客户信息</th>
+                                        <th width="17%">当前进度</th>
+                                        <th width="40%">最近跟进</th>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="client-item">
+                                <table class="client-table">
+                                    <tr>
+                                        <td width="8%">
+                                            <div class="table-heart icon">
+                                            </div>
+                                        </td>
+                                        <td width="15%">
+                                            <div class="client-infos">
+                                                <div class="info-main">
+                                                    <span class="client-name">王晓明</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td width="20%">
+                                            <div class="client-infos">
+                                                <div class="c-company">xxx公司</div>
+                                                <div class="c-tel">1343454327</div>
+                                            </div>
+                                        </td>
+                                        <td width="17%">
+                                            <div class="client-infos">
+                                                <div class="info-nav">
+                                                    <span class="progressbar">洽谈中</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td width="40%">
+                                            <div class="client-infos">
+                                                <div class="c-time">
+                                                    <span>03月22日 &nbsp 13:20</span>
+                                                </div>
+                                                <div class="worknote">工作记录</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="add-record">新增记录</div>
+                            </div>
+                            <div class="client-item">
+                                <table class="client-table">
+                                    <tr>
+                                        <td width="8%">
+                                            <div class="table-heart icon">
+                                            </div>
+                                        </td>
+                                        <td width="15%">
+                                            <div class="client-infos">
+                                                <div class="info-main">
+                                                    <span class="client-name">王晓明</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td width="20%">
+                                            <div class="client-infos">
+                                                <div class="c-company">xxx公司</div>
+                                                <div class="c-tel">1343454327</div>
+                                            </div>
+                                        </td>
+                                        <td width="17%">
+                                            <div class="client-infos">
+                                                <div class="info-nav">
+                                                    <span class="progressbar">洽谈中</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td width="40%">
+                                            <div class="client-infos">
+                                                <div class="c-time">
+                                                    <span>03月22日 &nbsp 13:20</span>
+                                                </div>
+                                                <div class="worknote">工作记录</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="add-record">新增记录</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script type="vue/template" id="followpage">
+        <div class="lefeSider">
+            <ul>
+                <li>
+                    <a v-link="{ path: '/homepage2'}">
+                        <span class="icon homeIcon"></span>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li><a v-link="{ path: '/clientPage'}"><span class="icon personIcon"></span><span>客户</span></a></li>
+                <li class="menu-active"><a v-link="{ path: '/followpage'}"><span class="icon followIcon"></span><span>跟进</span></a></li>
+                <li><a v-link="{ path: '/remindpage'}"><span class="icon remindIcon"></span><span>代办</span></a></li>
+                <li><a href="#"><span class="icon infoIcon"></span><span>统计</span></a></li>
+                <li><a href="#"><span class="icon analysisIcon"></span><span>市场分析</span></a></li>
+            </ul>
+        </div>
+        <!-- 左侧end -->
+        <div class="followpage">
+            <div class="appBox">
+                <div class="box-container">
+                    <h2 class="mainTit">工作记录</h2>
+                    <div class="listHeader clearfix">
+                        <div class="listLeft">
+                            <div class="fl">筛选：</div>
+                            <div class="fl selectbox">
+                                <select name="" id="">
+                                    <option value="">全部</option>
+                                    <option value="">无</option>
+                                    <option value="">出访</option>
+                                    <option value="">报价</option>
+                                </select>
+                            </div>
+                            <div class="fl select-box">
+                                <select name="" id="">
+                                    <option value="" style="font-size: 14px;">全部时间</option>
+                                    <option value="">本天</option>
+                                    <option value="">昨天</option>
+                                    <option value="">本周</option>
+                                    <option value="">上周</option>
+                                    <option value="">本月</option>
+                                    <option value="">上月</option>
+                                    <option value="">本季度</option>
+                                </select>
+                            </div>
+                        </div>
+                        <a href="#" class="fr new-record">
+                            <span class="addIcon icon"></span>
+                            <span>新增工作记录</span>
+                        </a>
+                        <div class="fr search">
+                            <input type="text" placeholder="请输入客户名称进行查询">
+                            <span class="searchIcon"></span>
+                        </div>
+                    </div>
+                    <div class="follow-client">
+                        <div class="clientList">
+                            <ul>
+                                <li class="clearfix client-item">
+                                    <!--头像-->
+                                    <!--悬浮元素-->
+                                    <div class="customerTag">报价</div>
+                                    <div class="clearIcon icon"></div>
+                                    <!-- 左侧头像 -->
+                                    <div class="cLeft fl">
+                                        <img src="img/m.png32.jpg" alt="">
+                                    </div>
+                                    <div class="cRight fl">
+                                        <!--发布信息-->
+                                        <div class="pay-time">
+                                            <span class="u-name">我</span>
+                                            <span class="u-day">今天</span>
+                                            <span class="u-time">17:45</span>
+                                            <span class="u-week">周日</span>
+                                        </div>
+                                        <!--客户名称-->
+                                        <div class="clinet-name">
+                                            <a href="#" class="c-name">客户姓名</a>
+                                            <a href="#" class="c-heart icon"></a>
+                                        </div>
+                                        <!-- 工作记录 -->
+                                        <p class="note-content">
+                                            <span>工作记录：</span>
+                                            <span class="moreLine">工作记录内容</span>
+                                        </p>
+                                        <div class="upload-pic">
+                                            <span>
+												<img src="img/1.jpg" alt="">
+											</span>
+                                  
+                                        </div>
+                                        <!--底部信息-->
+                                        <div class="listFoot ">
+                                            <div class="comment fr">
+                                                <span class="commentIcon icon"></span>评论 (
+                                                <span class="commentNum">33</span>)
+                                            </div>
+                                            <!--评论区-->
+                                            <div class="clearfix"></div>
+                                            <div class="commment-area clearfix">
+                                                <textarea rows="4" maxlength="300" placeholder="发表评论" id="" cols="30" rows="5"></textarea>
+                                                <h4 class="inpu4t-alert fl">你可以输入<span>300</span>个字</h4>
+                                                <div class="comm-btn fr">
+                                                    <span class="canclebtn">取消</span>
+                                                    <span class="savebtn">保存</span>
+                                                </div>
+                                            </div>
+                                            <!-- 回复 -->
+                                            <div class="reply">
+                                                <ul class="reply-list">
+                                                    <li class="reply-item clearfix">
+                                                        <a href="#" class="fl"><img src="img/1.jpg" alt=""></a>
+                                                        <div class="reply-msg fl">
+                                                            <p class="reply-p-t">
+                                                                <span class="reply-person">回复人</span>
+                                                                <span class="reply-time">回复时间</span>
+                                                            </p>
+                                                            <p class="reply-content">回复内容</p>
+                                                        </div>
+                                                        <a href="#" class="fr click-reply">回复</a>
+                                                    </li>
+                                                    <li class="reply-item clearfix">
+                                                        <a href="#" class="fl"><img src="img/1.jpg" alt=""></a>
+                                                        <div class="reply-msg fl">
+                                                            <p class="reply-p-t">
+                                                                <span class="reply-person">回复人</span>
+                                                                <span class="reply-time">回复时间</span>
+                                                            </p>
+                                                            <p class="reply-content">回复内容</p>
+                                                        </div>
+                                                        <a href="#" class="fr click-reply">回复</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script type="vue/template" id="remindpage">
+        <div class="lefeSider">
+            <ul>
+                <li><a v-link="{ path: '/homepage2'}"><span class="icon homeIcon"></span><span>首页</span></a></li>
+                <li><a v-link="{ path: '/clientPage'}"><span class="icon personIcon"></span><span>客户</span></a></li>
+                <li><a v-link="{ path: '/followpage'}"><span class="icon followIcon"></span><span>跟进</span></a></li>
+                <li class="menu-active"><a v-link="{ path: '/remindpage'}"><span class="icon remindIcon"></span><span>代办</span></a></li>
+                <li><a href="#"><span class="icon infoIcon"></span><span>统计</span></a></li>
+                <li><a href="#"><span class="icon analysisIcon"></span><span>市场分析</span></a></li>
+            </ul>
+        </div>
+        <!-- 左侧end -->
+        <div class="remindPage">
+            <div class="appBox">
+                <div class="box-container">
+                    <div class="this-header clearfix">
+                        <h2 class="mainTit fl">待办列表</h2>
+                        <div class="add-btn fr">
+                            <span>新增</span>
+                        </div>
+                    </div>
+                    <div class="nav-header clearfix">
+                        <span class="tasking">进行中
+                    (<span class="task-num">2</span>)
+                        </span>
+                        <span class="taskDone">已完成的</span>
+                    </div>
+                    <div class="task-box">
+                        <ul class="task-list">
+                            <!-- 逾期事件 -->
+                            <li class="overDue">
+                                <h2 class="nav-time">逾期
+                            (<span>1</span>条)</h2>
+                                <div class="f-taskList">
+                                    <div class="task-data clearfix">
+                                        <div class="set-time fl">
+                                            <span class="item-date">2月4日</span>
+                                            <span>周三</span>
+                                        </div>
+                                        <div class="task-content fr clearfix">
+                                            <div class="task-item">
+                                                <div class="task-cont">
+                                                    <div class="cont-top clearfix">
+                                                        <span class="fl">18:30</span>
+                                                        <span class="fl">客户名字</span>
+                                                        <span class="moreLine text fl">给客户打电话</span>
+                                                    </div>
+                                                    <div class="cont-btn">
+                                                        <a href="#">设为完成</a>
+                                                        <a href="#">完成并记录</a>
+                                                        <a href="#">改期</a>
+                                                        <a href="#">删除</a>
+                                                        <a href="#">编辑</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="task-item">
+                                                <div class="task-cont">
+                                                    <div class="cont-top clearfix">
+                                                        <span class="fl">18:30</span>
+                                                        <span class="fl">客户名字</span>
+                                                        <span class="moreLine text fl">给客户打电话</span>
+                                                    </div>
+                                                    <div class="cont-btn">
+                                                        <a href="#">设为完成</a>
+                                                        <a href="#">完成并记录</a>
+                                                        <a href="#">改期</a>
+                                                        <a href="#">删除</a>
+                                                        <a href="#">编辑</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="task-data clearfix">
+                                        <div class="set-time fl">
+                                            <span class="item-date">2月4日</span>
+                                            <span>周三</span>
+                                        </div>
+                                        <div class="task-content fr clearfix">
+                                            <div class="task-item">
+                                                <div class="task-cont">
+                                                    <div class="cont-top clearfix">
+                                                        <span class="fl">18:30</span>
+                                                        <span class="fl">客户名字</span>
+                                                        <span class="moreLine text fl">给客户打电话</span>
+                                                    </div>
+                                                    <div class="cont-btn">
+                                                        <a href="#">设为完成</a>
+                                                        <a href="#">完成并记录</a>
+                                                        <a href="#">改期</a>
+                                                        <a href="#">删除</a>
+                                                        <a href="#">编辑</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="task-item">
+                                                <div class="task-cont">
+                                                    <div class="cont-top clearfix">
+                                                        <span class="fl">18:30</span>
+                                                        <span class="fl">客户名字</span>
+                                                        <span class="moreLine text fl">给客户打电话</span>
+                                                    </div>
+                                                    <div class="cont-btn">
+                                                        <a href="#">设为完成</a>
+                                                        <a href="#">完成并记录</a>
+                                                        <a href="#">改期</a>
+                                                        <a href="#">删除</a>
+                                                        <a href="#">编辑</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 本周事件 -->
+                            <li class="overDue">
+                                <h2 class="nav-time">本周
+                            (<span>1</span>条)</h2>
+                                <div class="f-taskList">
+                                    <div class="task-data clearfix">
+                                        <div class="set-time fl">
+                                            <span class="item-date">2月4日</span>
+                                            <span>周三</span>
+                                        </div>
+                                        <div class="task-content fr clearfix">
+                                            <div class="task-item">
+                                                <div class="task-cont">
+                                                    <div class="cont-top clearfix">
+                                                        <span class="fl">18:30</span>
+                                                        <span class="fl">客户名字</span>
+                                                        <span class="moreLine text fl">给客户打电话</span>
+                                                    </div>
+                                                    <div class="cont-btn">
+                                                        <a href="#">设为完成</a>
+                                                        <a href="#">完成并记录</a>
+                                                        <a href="#">改期</a>
+                                                        <a href="#">删除</a>
+                                                        <a href="#">编辑</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="task-item">
+                                                <div class="task-cont">
+                                                    <div class="cont-top clearfix">
+                                                        <span class="fl">18:30</span>
+                                                        <span class="fl">客户名字</span>
+                                                        <span class="moreLine text fl">给客户打电话</span>
+                                                    </div>
+                                                    <div class="cont-btn">
+                                                        <a href="#">设为完成</a>
+                                                        <a href="#">完成并记录</a>
+                                                        <a href="#">改期</a>
+                                                        <a href="#">删除</a>
+                                                        <a href="#">编辑</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="task-data clearfix">
+                                        <div class="set-time fl">
+                                            <span class="item-date">2月4日</span>
+                                            <span>周三</span>
+                                        </div>
+                                        <div class="task-content fr clearfix">
+                                            <div class="task-item">
+                                                <div class="task-cont">
+                                                    <div class="cont-top clearfix">
+                                                        <span class="fl">18:30</span>
+                                                        <span class="fl">客户名字</span>
+                                                        <span class="moreLine text fl">给客户打电话</span>
+                                                    </div>
+                                                    <div class="cont-btn">
+                                                        <a href="#">设为完成</a>
+                                                        <a href="#">完成并记录</a>
+                                                        <a href="#">改期</a>
+                                                        <a href="#">删除</a>
+                                                        <a href="#">编辑</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="task-item">
+                                                <div class="task-cont">
+                                                    <div class="cont-top clearfix">
+                                                        <span class="fl">18:30</span>
+                                                        <span class="fl">客户名字</span>
+                                                        <span class="moreLine text fl">给客户打电话</span>
+                                                    </div>
+                                                    <div class="cont-btn">
+                                                        <a href="#">设为完成</a>
+                                                        <a href="#">完成并记录</a>
+                                                        <a href="#">改期</a>
+                                                        <a href="#">删除</a>
+                                                        <a href="#">编辑</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 更远事件 -->
+                            <li class="overDue">
+                                <h2 class="nav-time">更远
+                            (<span>1</span>条)</h2>
+                                <div class="f-taskList">
+                                    <div class="task-data clearfix">
+                                        <div class="set-time fl">
+                                            <span class="item-date">2月4日</span>
+                                            <span>周三</span>
+                                        </div>
+                                        <div class="task-content fr clearfix">
+                                            <div class="task-item">
+                                                <div class="task-cont">
+                                                    <div class="cont-top clearfix">
+                                                        <span class="fl">18:30</span>
+                                                        <span class="fl">客户名字</span>
+                                                        <span class="moreLine text fl">给客户打电话</span>
+                                                    </div>
+                                                    <div class="cont-btn">
+                                                        <a href="#">设为完成</a>
+                                                        <a href="#">完成并记录</a>
+                                                        <a href="#">改期</a>
+                                                        <a href="#">删除</a>
+                                                        <a href="#">编辑</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="task-item">
+                                                <div class="task-cont">
+                                                    <div class="cont-top clearfix">
+                                                        <span class="fl">18:30</span>
+                                                        <span class="fl">客户名字</span>
+                                                        <span class="moreLine text fl">给客户打电话</span>
+                                                    </div>
+                                                    <div class="cont-btn">
+                                                        <a href="#">设为完成</a>
+                                                        <a href="#">完成并记录</a>
+                                                        <a href="#">改期</a>
+                                                        <a href="#">删除</a>
+                                                        <a href="#">编辑</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="task-data clearfix">
+                                        <div class="set-time fl">
+                                            <span class="item-date">2月4日</span>
+                                            <span>周三</span>
+                                        </div>
+                                        <div class="task-content fr clearfix">
+                                            <div class="task-item">
+                                                <div class="task-cont">
+                                                    <div class="cont-top clearfix">
+                                                        <span class="fl">18:30</span>
+                                                        <span class="fl">客户名字</span>
+                                                        <span class="moreLine text fl">给客户打电话</span>
+                                                    </div>
+                                                    <div class="cont-btn">
+                                                        <a href="#">设为完成</a>
+                                                        <a href="#">完成并记录</a>
+                                                        <a href="#">改期</a>
+                                                        <a href="#">删除</a>
+                                                        <a href="#">编辑</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="task-item">
+                                                <div class="task-cont">
+                                                    <div class="cont-top clearfix">
+                                                        <span class="fl">18:30</span>
+                                                        <span class="fl">客户名字</span>
+                                                        <span class="moreLine text fl">给客户打电话</span>
+                                                    </div>
+                                                    <div class="cont-btn">
+                                                        <a href="#">设为完成</a>
+                                                        <a href="#">完成并记录</a>
+                                                        <a href="#">改期</a>
+                                                        <a href="#">删除</a>
+                                                        <a href="#">编辑</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

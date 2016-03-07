@@ -301,8 +301,9 @@ $(function(){
 
 
     //点击返回顶端按钮
-    $("#shop-go-top").click(function () {
-        $(document).scrollTop(0);
+    $("#shop-go-top").click(function () 
+	
+		$('html,body').animate({scrollTop:0},600);
     });
 
 
