@@ -14,7 +14,6 @@ body {
 
 body {
   background-color: #F5F5F5;
-  font-size: #fontSize;
   color: #333;
   font: 14px / 1.5 Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, Heiti, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -58,7 +57,7 @@ img {
   display: -webkit-box !important;
   overflow: hidden;
   text-overflow: ellipsis;
-  word-wrap: break-all;
+  word-break: break-all;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }

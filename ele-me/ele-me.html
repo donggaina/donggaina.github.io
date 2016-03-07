@@ -1,86 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>饿了么</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer-style.css">
-    <link rel="stylesheet" href="css/siderbar.css">
 </head>
+
 <body>
-<!--header start-->
-<!--定义锚标记-->
-<header class="topbar">
-    <div class="container">
-        <nav class="topbar-nav-left">
-            <ul class="topbar-list clearfix">
-                <li class="topbar-log">
-                    <a href="#">
-                        <img src="img/log.png" alt="">
-                    </a>
-                </li>
-                <li class="topbar-item homepage"><a href="#" class="topbar-item">首页</a></li>
-                <li class="topbar-item">
-                    <a href="#" class="topbar-item">
+    <!--header start-->
+    <!--定义锚标记-->
+    <header class="topbar">
+        <div class="container">
+            <nav class="topbar-nav-left">
+                <ul class="topbar-list clearfix">
+                    <li class="topbar-log">
+                        <a href="#">
+                            <img src="img/log.png" alt="">
+                        </a>
+                    </li>
+                    <li class="topbar-item homepage"><a href="#" class="topbar-item">首页</a></li>
+                    <li class="topbar-item">
+                        <a href="./ele-shop.html" class="topbar-item">
                         名牌商家
                         <div class="topbar-hot"></div>
                     </a>
-                </li>
-                <li class="topbar-item"><a href="#" class="topbar-item">我的订单</a></li>
-            </ul>
-        </nav>
-        <nav class="topbar-nav-right ">
-            <ul class="nav-list clearfix">
-                <li class="nav-item">
-                    <a href="#">
-                        <i class="nav-icon fa fa-gift"></i>
-                        <span>积分商城</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">
-                        <i class="nav-icon fa fa-headphones"></i>
-                        <span>服务中心</span>
-                    </a>
-                </li>
-                <li class="nav-item nav-mobile">
-                    <a href="#">
-                        <i class="nav-icon fa fa-mobile"></i>
-                        <span>手机应用</span>
-                    </a>
-
-                    <div class="mobile-qrcode">
-                        <div class="bubble mobile-bubble"></div>
-                        <p>扫一扫, 手机订餐更方便</p>
-                        <img src="img/qrcode.png" alt="">
-                    </div>
-                </li>
-
-                <li class="nav-profile">
-                    <img class="avatar" src="img/avatar.jpg" alt="">
-                    <span>316e67fa8</span>
-                    <span class="set-down">
+                    </li>
+                    <li class="topbar-item"><a href="#" class="topbar-item">我的订单</a></li>
+                </ul>
+            </nav>
+            <nav class="topbar-nav-right ">
+                <ul class="nav-list clearfix">
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="nav-icon fa fa-gift"></i>
+                            <span>积分商城</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="nav-icon fa fa-headphones"></i>
+                            <span>服务中心</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-mobile">
+                        <a href="#">
+                            <i class="nav-icon fa fa-mobile"></i>
+                            <span>手机应用</span>
+                        </a>
+                        <div class="mobile-qrcode">
+                            <div class="bubble mobile-bubble"></div>
+                            <p>扫一扫, 手机订餐更方便</p>
+                            <img src="img/qrcode.png" alt="">
+                        </div>
+                    </li>
+                    <li class="nav-profile">
+                        <img class="avatar" src="img/avatar.jpg" alt="">
+                        <span>316e67fa8</span>
+                        <span class="set-down">
                         <img src="img/down.png" alt="">
                     </span>
-
-                    <div class="topbar-dropbox">
-                        <div class="bubble bubble-dropbox"></div>
-                        <a href="#"><i class="fa fa-user"></i>个人中心</a>
-                        <a href="#"><i class="fa fa-star"></i>我的地址</a>
-                        <a href="#"><i class="fa fa-map-marker"></i>我的收藏</a>
-                        <a href="#" class="safety-setting"><i class="fa fa-cog"></i>安全设置</a>
-                        <a href="#"><i class="fa fa-power-off"></i>安全退出</a>
-                    </div>
-                </li>
-            </ul>
-
-        </nav>
-    </div>
-</header>
-<!--header end-->
-<div class="sidebar">
-    <div class="sidebar-tabs">
+                        <div class="topbar-dropbox">
+                            <div class="bubble bubble-dropbox"></div>
+                            <a href="#"><i class="fa fa-user"></i>个人中心</a>
+                            <a href="#"><i class="fa fa-star"></i>我的地址</a>
+                            <a href="#"><i class="fa fa-map-marker"></i>我的收藏</a>
+                            <a href="#" class="safety-setting"><i class="fa fa-cog"></i>安全设置</a>
+                            <a href="#"><i class="fa fa-power-off"></i>安全退出</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--header end-->
+    <div class="sidebar">
+        <div class="sidebar-tabs">
             <ul class="tabs-middle">
                 <li class="siderbar-myorder">
                     <i class="fa fa-bars"></i>
@@ -89,12 +85,10 @@
                         <div class="shop-sidebar-bubble"><i class="fa fa-caret-right right-icon"></i></div>
                     </div>
                 </li>
-
                 <div class="tabs-separator"></div>
                 <li href="#" class="tabs-item-shop">
                     <i class="fa fa-shopping-cart"></i>
                     <span class="sidebar-shop-cart">购物车</span>
-
                 </li>
                 <div class="tabs-separator"></div>
                 <li class="siderbar-mymsg">
@@ -111,19 +105,15 @@
                         <div class="shop-sidebar-bubble"><i class="fa fa-caret-right right-icon"></i></div>
                     </div>
                 </li>
-
             </ul>
             <ul class="tabs-bottom">
-
                 <li class="shop-online-server">
                     <i class="fa fa-headphones"></i>
                     <div class="shop-sidebar-alert">
                         在线客服
                         <div class="shop-sidebar-bubble"><i class="fa fa-caret-right right-icon"></i></div>
                     </div>
-
                 </li>
-
                 <li class="sidebar-qrcode">
                     <i class="fa fa-qrcode"></i>
                     <div class="icon-wechat">
@@ -134,764 +124,748 @@
                     </div>
                 </li>
                 <li class="goback-top" id="goback-top" style="display: none;">
-                <i class="fa fa-arrow-circle-o-up"></i>
+                    <i class="fa fa-arrow-circle-o-up"></i>
                 </li>
-
             </ul>
         </div>
-    <div class="sidebar-content">
-        <div class="sidebar-cart">
-            <div class="sidebarcart-caption">
-                <a href="#">购物车</a>
-                <a href="#" class="toggle-cart">
-                    <i class="fa fa-angle-double-right"></i></a>
-            </div>
-            <div class="sidebar-all">
-                <div class="sidebarcart-details">
-                    <dl class="cart-basket">
-                        <dt>
-                            <span>1号购物车</span>
-                            <a href="#" class="clear-cart" id="clear-cart">[清空]</a>
-                        </dt>
-                        <dd>
-                            <ul>
-                                <li class="cart-item">
-                                    <div class="cart-name">黄焖鸡中份</div>
-                                    <div class="cart-amount">
-                                        <span class="cart-amount-reduce">-</span>
-                                        <input type="text" value="0" class="cart-totalcount">
-                                        <span class="cart-amount-add">+</span>
-                                    </div>
-                                    <div class="cart-tprice">0</div>
-                                </li>
-                                <li class="cart-item">
-                                    <div class="cart-name">黄焖鸡中份</div>
-                                    <div class="cart-amount">
-                                        <span class="cart-amount-reduce">-</span>
-                                        <input type="text" value="0" class="cart-totalcount">
-                                        <span class="cart-amount-add">+</span>
-                                    </div>
-                                    <div class="cart-tprice">0</div>
-                                </li>
-                            </ul>
-                        </dd>
-                    </dl>
-
+        <div class="sidebar-content">
+            <div class="sidebar-cart">
+                <div class="sidebarcart-caption">
+                    <a href="#">购物车</a>
+                    <a href="#" class="toggle-cart">
+                        <i class="fa fa-angle-double-right"></i></a>
                 </div>
-                <div class="sidebarcart-summary" id="cart-summary">
-                    <p>共<span class="total-number" id="tn"> 0</span> 份，共计
-                        <span class="pricetotal" id="ptl">0</span> 元
-                    </p>
-                    <button class="sidebar-submit">去结算</button>
+                <div class="sidebar-all">
+                    <div class="sidebarcart-details">
+                        <dl class="cart-basket">
+                            <dt>
+                                <span>1号购物车</span>
+                                <a href="#" class="clear-cart" id="clear-cart">[清空]</a>
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li class="cart-item">
+                                        <div class="cart-name">黄焖鸡中份</div>
+                                        <div class="cart-amount">
+                                            <span class="cart-amount-reduce">-</span>
+                                            <input type="text" value="0" class="cart-totalcount">
+                                            <span class="cart-amount-add">+</span>
+                                        </div>
+                                        <div class="cart-tprice">0</div>
+                                    </li>
+                                    <li class="cart-item">
+                                        <div class="cart-name">黄焖鸡中份</div>
+                                        <div class="cart-amount">
+                                            <span class="cart-amount-reduce">-</span>
+                                            <input type="text" value="0" class="cart-totalcount">
+                                            <span class="cart-amount-add">+</span>
+                                        </div>
+                                        <div class="cart-tprice">0</div>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="sidebarcart-summary" id="cart-summary">
+                        <p>共<span class="total-number" id="tn"> 0</span> 份，共计
+                            <span class="pricetotal" id="ptl">0</span> 元
+                        </p>
+                        <button class="sidebar-submit">去结算</button>
+                    </div>
+                </div>
+                <div class="empty-cart" id="empty-cart">
+                    <i class="fa fa-history"></i>
+                    <h3>购物车空空如也</h3>
+                    <h4>快去订餐吧，总有你心仪的美食</h4>
                 </div>
             </div>
-            <div class="empty-cart" id="empty-cart">
-                <i class="fa fa-history"></i>
-                <h3>购物车空空如也</h3>
-                <h4>快去订餐吧，总有你心仪的美食</h4>
-
-            </div>
-
         </div>
     </div>
-</div>
-<!--header start-->
-<div class="eleme-box">
-    <div class="container">
-        <div class="box-top clearfix">
-            <div class="location">
-                <span>当前位置:</span>
-                <span class="location-current"><a href="#">山阳区河南理工大学内</a></span>
-                <span><a href="#">[切换地址]</a></span>
-            </div>
-            <div class="place-search">
-                <a href="#" class="search-btn"><i class="fa fa-search"></i></a>
-                <input type="text" placeholder="搜索商家,美食...">
-            </div>
-        </div>
-        <div class="active">
-            <a href="#"><img src="img/eye.webp" alt=""></a>
-        </div>
-        <div class="place-tab">
-            <div class="place-tab-topbar">
-                <a class="place-tab-item focus" href="#">外卖商家</a>
-                <span class="place-line"></span>
-                <a class="place-tab-item" href="#">附件的团购</a>
-            </div>
-            <div class="takeout">
-                <img src="img/takeout.png" alt="">
-            </div>
-        </div>
-        <div class="sort">
-            <div class="business-sort">
-                <span class="sort-name">商家分类&nbsp;:</span>
-                <a class="sort-item-focus" href="#">全部商家</a>
-                <a class="sort-item famous" href="#">名牌商家</a>
-                <a class="sort-item" href="#">快餐类</a>
-                <a class="sort-item" href="#">正餐类</a>
-                <a class="sort-item" href="#">小吃零食</a>
-                <a class="sort-item" href="#">甜品饮品</a>
-                <a class="sort-item" href="#">果蔬生鲜</a>
-                <a class="sort-item" href="#">鲜花蛋糕</a>
-                <a class="sort-item" href="#">超市便利店</a>
-            </div>
-            <div class="option  container clearfix" id="fix-bar">
-                <div class="order-sort-left">
-                    <a href="#" class="order-item default">默认排序</a>
-                    <a href="#" class="order-item">销量高</a>
-                    <a href="#" class="order-item">评价好</a>
-                    <div class="other-sort">
-                        <a href="#" class="order-item">
-                            <span>其他排序</span>
-                            <i class="fa fa-angle-down"></i>
-                            <i class="fa fa-angle-up iocn-up"></i>
-                        </a>
-
-                        <div class="other-sort-item">
-                            <a href="#">距离最近</a>
-                            <a href="#">配送速度</a>
-                            <a href="#">起送金额</a>
-                        </div>
-                    </div>
-                    <div class="start-price">
-                        <a href="#" class="order-item">
-                            <span>起始价格：不限</span>
-                            <i class="fa fa-angle-down"></i>
-                            <i class="fa fa-angle-up iocn-up"></i>
-                        </a>
-                        <div class="start-price-item">
-                            <a href="#">不限</a>
-                            <a href="#">15元以下</a>
-                            <a href="#">20元以下</a>
-                            <a href="#">30元以下</a>
-                            <a href="#">40元以下</a>
-                        </div>
-                    </div>
+    <!--header start-->
+    <div class="eleme-box">
+        <div class="container">
+            <div class="box-top clearfix">
+                <div class="location">
+                    <span>当前位置:</span>
+                    <span class="location-current"><a href="#">山阳区河南理工大学内</a></span>
+                    <span><a href="#">[切换地址]</a></span>
                 </div>
-
-                <div class="place-search" id="place_search">
+                <div class="place-search">
                     <a href="#" class="search-btn"><i class="fa fa-search"></i></a>
                     <input type="text" placeholder="搜索商家,美食...">
                 </div>
-                <div class="order-sort-right">
-                    <span class="sort-line"></span>
-                    <label class="order-item-label"><input type="checkbox">新开商家</label>
-                    <label class="order-item-label"><input type="checkbox">免费配送</label>
-                    <label class="order-item-label"><input type="checkbox">饿配送</label>
-                    <label class="order-item-label"><input type="checkbox">可开发票</label>
-                    <label class="order-item-label"><input type="checkbox">在线支付</label>
-
+            </div>
+            <div class="active">
+                <a href="#"><img src="img/eye.webp" alt=""></a>
+            </div>
+            <div class="place-tab">
+                <div class="place-tab-topbar">
+                    <a class="place-tab-item focus" href="#">外卖商家</a>
+                    <span class="place-line"></span>
+                    <a class="place-tab-item" href="#">附件的团购</a>
+                </div>
+                <div class="takeout">
+                    <img src="img/takeout.png" alt="">
                 </div>
             </div>
-        </div>
-        <div class="place-tips">
-            <span>想吃好点的，看看附近</span>
-            <var>2家</var>
-            <span>品牌商家吧,</span>
-            <a href="#">立即查看</a>
-        </div>
-        <div class="rmd-box clearfix">
-            <div class="rmd-block">
-                <div class="rmd-item ">
-                    <a href="./ele-shop.html">
-                        <div class="rmd-log">
-                            <img src="img/r1.png" alt="">
-                            <span>42分钟</span>
+            <div class="sort">
+                <div class="business-sort">
+                    <span class="sort-name">商家分类&nbsp;:</span>
+                    <a class="sort-item-focus" href="#">全部商家</a>
+                    <a class="sort-item famous" href="#">名牌商家</a>
+                    <a class="sort-item" href="#">快餐类</a>
+                    <a class="sort-item" href="#">正餐类</a>
+                    <a class="sort-item" href="#">小吃零食</a>
+                    <a class="sort-item" href="#">甜品饮品</a>
+                    <a class="sort-item" href="#">果蔬生鲜</a>
+                    <a class="sort-item" href="#">鲜花蛋糕</a>
+                    <a class="sort-item" href="#">超市便利店</a>
+                </div>
+                <div class="option  container clearfix" id="fix-bar">
+                    <div class="order-sort-left">
+                        <a href="#" class="order-item default">默认排序</a>
+                        <a href="#" class="order-item">销量高</a>
+                        <a href="#" class="order-item">评价好</a>
+                        <div class="other-sort">
+                            <a href="#" class="order-item">
+                                <span>其他排序</span>
+                                <i class="fa fa-angle-down"></i>
+                                <i class="fa fa-angle-up iocn-up"></i>
+                            </a>
+                            <div class="other-sort-item">
+                                <a href="#">距离最近</a>
+                                <a href="#">配送速度</a>
+                                <a href="#">起送金额</a>
+                            </div>
                         </div>
-                        <div class="rmd-content">
+                        <div class="start-price">
+                            <a href="#" class="order-item">
+                                <span>起始价格：不限</span>
+                                <i class="fa fa-angle-down"></i>
+                                <i class="fa fa-angle-up iocn-up"></i>
+                            </a>
+                            <div class="start-price-item">
+                                <a href="#">不限</a>
+                                <a href="#">15元以下</a>
+                                <a href="#">20元以下</a>
+                                <a href="#">30元以下</a>
+                                <a href="#">40元以下</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="place-search" id="place_search">
+                        <a href="#" class="search-btn"><i class="fa fa-search"></i></a>
+                        <input type="text" placeholder="搜索商家,美食...">
+                    </div>
+                    <div class="order-sort-right">
+                        <span class="sort-line"></span>
+                        <label class="order-item-label">
+                            <input type="checkbox">新开商家</label>
+                        <label class="order-item-label">
+                            <input type="checkbox">免费配送</label>
+                        <label class="order-item-label">
+                            <input type="checkbox">饿配送</label>
+                        <label class="order-item-label">
+                            <input type="checkbox">可开发票</label>
+                        <label class="order-item-label">
+                            <input type="checkbox">在线支付</label>
+                    </div>
+                </div>
+            </div>
+            <div class="place-tips">
+                <span>想吃好点的，看看附近</span>
+                <var>2家</var>
+                <span>品牌商家吧,</span>
+                <a href="#">立即查看</a>
+            </div>
+            <div class="rmd-box clearfix">
+                <div class="rmd-block">
+                    <div class="rmd-item ">
+                        <a href="./ele-shop.html">
+                            <div class="rmd-log">
+                                <img src="img/r1.png" alt="">
+                                <span>42分钟</span>
+                            </div>
+                            <div class="rmd-content">
+                                <div class="rmd-title">九品太煲黄焖鸡</div>
+                                <div class="rmd-sub">
+                                    <span class="rmd-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </span>
+                                    <span class="sales-count">月售1000单</span>
+                                </div>
+                                <div class="rmd-cost">0元起送 / 免费配送</div>
+                                <div class="rmd-activity">
+                                    <i style="background:#3cc791;">增</i>
+                                    <i style="background:#f1884f;">考</i>
+                                    <i style="background:#f07373">减</i>
+                                    <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="rmd-details">
+                        <div class="rmd-item-detail">
                             <div class="rmd-title">九品太煲黄焖鸡</div>
-                            <div class="rmd-sub">
-                            <span class="rmd-star">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-o"></i>
-                            </span>
-                                <span class="sales-count">月售1000单</span>
-                            </div>
-                            <div class="rmd-cost">0元起送 / 免费配送</div>
                             <div class="rmd-activity">
-                                <i style="background:#3cc791;">增</i>
-                                <i style="background:#f1884f;">考</i>
-                                <i style="background:#f07373">减</i>
-                                <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="rmd-details">
-
-                    <div class="rmd-item-detail">
-                        <div class="rmd-title">九品太煲黄焖鸡</div>
-                        <div class="rmd-activity">
-                            <div class="detail-nav">
-                                <i style="background:#f1884f;">考</i>
-                                <p><span>(不与其他活动同享)</span>指定菜单下单，
-                                    送汤一份<span>(手机客户端专享)</span></p>
-                            </div>
-                            <div class="detail-nav">
-                                <i style="background:#f07373">减</i>
-                                <p>15减2，30减4<span>(手机客户端专享)</span></p>
-                            </div>
-                            <div class="detail-nav">
-                                <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
-                                <p>可使用手机QQ、支付宝、微信进行在线支付</p>
-                            </div>
-                            <div class="deliver-detail">
-                                <span>0元起送</span>
-                                <span class="free-delivery">|</span>
-                                <span class="free-delivery">免费配送</span>
-                                <span class="free-delivery">|</span>
-                                <span>平均40分钟送达</span>
-                            </div>
-                            <div class="shop-notice">
-                                <p>冬日来袭，寒冷的冬天差一份温暖，九品太保将推出特色营养汤粥，美味无比，亲，还在等什么呢？
-                                    快来订餐吧。饿了么理工大学咨询电话15548386939，全国客服热线10105757</p>
+                                <div class="detail-nav">
+                                    <i style="background:#f1884f;">考</i>
+                                    <p><span>(不与其他活动同享)</span>指定菜单下单， 送汤一份
+                                        <span>(手机客户端专享)</span></p>
+                                </div>
+                                <div class="detail-nav">
+                                    <i style="background:#f07373">减</i>
+                                    <p>15减2，30减4<span>(手机客户端专享)</span></p>
+                                </div>
+                                <div class="detail-nav">
+                                    <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
+                                    <p>可使用手机QQ、支付宝、微信进行在线支付</p>
+                                </div>
+                                <div class="deliver-detail">
+                                    <span>0元起送</span>
+                                    <span class="free-delivery">|</span>
+                                    <span class="free-delivery">免费配送</span>
+                                    <span class="free-delivery">|</span>
+                                    <span>平均40分钟送达</span>
+                                </div>
+                                <div class="shop-notice">
+                                    <p>冬日来袭，寒冷的冬天差一份温暖，九品太保将推出特色营养汤粥，美味无比，亲，还在等什么呢？ 快来订餐吧。饿了么理工大学咨询电话15548386939，全国客服热线10105757
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="rmd-block">
-                <div class="rmd-item ">
-                    <a href="#">
-                        <div class="rmd-log">
-                            <div class="log-brand"></div>
-                            <img src="img/r3.jpg" alt="">
-                            <span>22分钟</span>
-                        </div>
-                        <div class="rmd-content">
-                            <div class="rmd-title">香酥风味炸鸡</div>
-                            <div class="rmd-sub">
-                            <span class="rmd-star">
+                <div class="rmd-block">
+                    <div class="rmd-item ">
+                        <a href="#">
+                            <div class="rmd-log">
+                                <div class="log-brand"></div>
+                                <img src="img/r3.jpg" alt="">
+                                <span>22分钟</span>
+                            </div>
+                            <div class="rmd-content">
+                                <div class="rmd-title">香酥风味炸鸡</div>
+                                <div class="rmd-sub">
+                                    <span class="rmd-star">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half-o"></i>
                             </span>
-                                <span class="sales-count">月售600单</span>
+                                    <span class="sales-count">月售600单</span>
+                                </div>
+                                <div class="rmd-cost">10元起送 / 免费配送</div>
+                                <div class="rmd-activity">
+                                    <i style="background:#f1884f;">考</i>
+                                    <i style="background:#3cc791;">增</i>
+                                    <i style="background:#3cc791;">增</i>
+                                    <i style="background:#f07373">减</i>
+                                    <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
+                                </div>
                             </div>
-                            <div class="rmd-cost">10元起送 / 免费配送</div>
-                            <div class="rmd-activity">
-                                <i style="background:#f1884f;">考</i>
-                                <i style="background:#3cc791;">增</i>
-                                <i style="background:#3cc791;">增</i>
-                                <i style="background:#f07373">减</i>
-                                <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="rmd-details ">
-                    <div class="rmd-item-detail">
-                        <div class="rmd-title">九品太煲黄焖鸡</div>
-                        <div class="rmd-activity">
-                            <div class="detail-nav">
-                                <i style="background:#f1884f;">考</i>
-                                <p><span>(不与其他活动同享)</span>指定菜单下单，
-                                    送汤一份<span>(手机客户端专享)</span></p>
-                            </div>
-                            <div class="detail-nav">
-                                <i style="background:#f07373">减</i>
-                                <p>15减2，30减4<span>(手机客户端专享)</span></p>
-                            </div>
-                            <div class="detail-nav">
-                                <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
-                                <p>可使用手机QQ、支付宝、微信进行在线支付</p>
-                            </div>
-                            <div class="deliver-detail">
-                                <span>0元起送</span>
-                                <span class="free-delivery">|</span>
-                                <span class="free-delivery">免费配送</span>
-                                <span class="free-delivery">|</span>
-                                <span>平均40分钟送达</span>
-                            </div>
-                            <div class="shop-notice">
-                                <p>冬日来袭，寒冷的冬天差一份温暖，九品太保将推出特色营养汤粥，美味无比，亲，还在等什么呢？
-                                    快来订餐吧。饿了么理工大学咨询电话15548386939，全国客服热线10105757</p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
-                </div>
-
-            </div>
-            <div class="rmd-block">
-			
-			
-                <div class="rmd-item ">
-                    <a href="#">
-                        <div class="rmd-log">
-                            <img src="img/r2.jpg" alt="">
-                            <span>25分钟</span>
-                        </div>
-                        <div class="rmd-content">
-                            <div class="rmd-title">味鲜盒饭快餐</div>
-                            <div class="rmd-sub">
-                            <span class="rmd-star">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-o"></i>
-                            </span>
-                                <span class="sales-count">月售1000单</span>
-                            </div>
-                            <div class="rmd-cost">10元起送 / 免费配送</div>
-                            <div class="rmd-schedule">
-                                <span>可预订，14:00后送餐</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="rmd-details ">
-                    <div class="rmd-item-detail">
-                        <div class="rmd-title">九品太煲黄焖鸡</div>
-                        <div class="rmd-activity">
-                            <div class="detail-nav">
-                                <i style="background:#f1884f;">考</i>
-                                <p><span>(不与其他活动同享)</span>指定菜单下单，
-                                    送汤一份<span>(手机客户端专享)</span></p>
-                            </div>
-                            <div class="detail-nav">
-                                <i style="background:#f07373">减</i>
-                                <p>15减2，30减4<span>(手机客户端专享)</span></p>
-                            </div>
-                            <div class="detail-nav">
-                                <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
-                                <p>可使用手机QQ、支付宝、微信进行在线支付</p>
-                            </div>
-                            <div class="deliver-detail">
-                                <span>0元起送</span>
-                                <span class="free-delivery">|</span>
-                                <span class="free-delivery">免费配送</span>
-                                <span class="free-delivery">|</span>
-                                <span>平均40分钟送达</span>
-                            </div>
-                            <div class="shop-notice">
-                                <p>冬日来袭，寒冷的冬天差一份温暖，九品太保将推出特色营养汤粥，美味无比，亲，还在等什么呢？
-                                    快来订餐吧。饿了么理工大学咨询电话15548386939，全国客服热线10105757</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="rmd-block">
-                <div class="rmd-item ">
-                    <a href="#">
-                        <div class="rmd-log">
-                            <img src="img/r4.jpg" alt="">
-                            <span>35分钟</span>
-                        </div>
-                        <div class="rmd-content">
-                            <div class="rmd-title">春哥热干面</div>
-                            <div class="rmd-sub">
-                            <span class="rmd-star">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-o"></i>
-                            </span>
-                                <span class="sales-count">月售456单</span>
-                            </div>
-                            <div class="rmd-cost">10元起送 / 免费配送</div>
-                            <div class="rmd-activity" style="display: none">
-                                <i style="background:#f1884f;">考</i>
-                                <i style="background:#f07373">减</i>
-                                <i style="background:#f1884f;">9</i>
-                                <i style="background:#f1884f;">10</i>
-                                <i style="background:#f1884f;">11</i>
-                                <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
-                            </div>
-                            <div class="rmd-resting">
-                                <span>商家休息中，暂不接单</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="rmd-details ">
-                    <div class="rmd-item-detail">
-                        <div class="rmd-title">九品太煲黄焖鸡</div>
-                        <div class="rmd-activity">
-                            <div class="detail-nav">
-                                <i style="background:#f1884f;">考</i>
-                                <p><span>(不与其他活动同享)</span>指定菜单下单，
-                                    送汤一份<span>(手机客户端专享)</span></p>
-                            </div>
-                            <div class="detail-nav">
-                                <i style="background:#f07373">减</i>
-                                <p>15减2，30减4<span>(手机客户端专享)</span></p>
-                            </div>
-                            <div class="detail-nav">
-                                <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
-                                <p>可使用手机QQ、支付宝、微信进行在线支付</p>
-                            </div>
-                            <div class="deliver-detail">
-                                <span>0元起送</span>
-                                <span class="free-delivery">|</span>
-                                <span class="free-delivery">免费配送</span>
-                                <span class="free-delivery">|</span>
-                                <span>平均40分钟送达</span>
-                            </div>
-                            <div class="shop-notice">
-                                <p>冬日来袭，寒冷的冬天差一份温暖，九品太保将推出特色营养汤粥，美味无比，亲，还在等什么呢？
-                                    快来订餐吧。饿了么理工大学咨询电话15548386939，全国客服热线10105757</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="rmd-block">
-                <div class="rmd-item ">
-                    <a href="#">
-                        <div class="rmd-log">
-                            <img src="img/r1.png" alt="">
-                            <span>42分钟</span>
-                        </div>
-                        <div class="rmd-content">
+                    <div class="rmd-details ">
+                        <div class="rmd-item-detail">
                             <div class="rmd-title">九品太煲黄焖鸡</div>
-                            <div class="rmd-sub">
-                            <span class="rmd-star">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-o"></i>
-                            </span>
-                                <span class="sales-count">月售1000单</span>
-                            </div>
-                            <div class="rmd-cost">0元起送 / 免费配送</div>
                             <div class="rmd-activity">
-                                <i style="background:#3cc791;">增</i>
-                                <i style="background:#f1884f;">考</i>
-                                <i style="background:#f07373">减</i>
-                                <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="rmd-details">
-
-                    <div class="rmd-item-detail">
-                        <div class="rmd-title">九品太煲黄焖鸡</div>
-                        <div class="rmd-activity">
-                            <div class="detail-nav">
-                                <i style="background:#f1884f;">考</i>
-                                <p><span>(不与其他活动同享)</span>指定菜单下单，
-                                    送汤一份<span>(手机客户端专享)</span></p>
-                            </div>
-                            <div class="detail-nav">
-                                <i style="background:#f07373">减</i>
-                                <p>15减2，30减4<span>(手机客户端专享)</span></p>
-                            </div>
-                            <div class="detail-nav">
-                                <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
-                                <p>可使用手机QQ、支付宝、微信进行在线支付</p>
-                            </div>
-                            <div class="deliver-detail">
-                                <span>0元起送</span>
-                                <span class="free-delivery">|</span>
-                                <span class="free-delivery">免费配送</span>
-                                <span class="free-delivery">|</span>
-                                <span>平均40分钟送达</span>
-                            </div>
-                            <div class="shop-notice">
-                                <p>冬日来袭，寒冷的冬天差一份温暖，九品太保将推出特色营养汤粥，美味无比，亲，还在等什么呢？
-                                    快来订餐吧。饿了么理工大学咨询电话15548386939，全国客服热线10105757</p>
+                                <div class="detail-nav">
+                                    <i style="background:#f1884f;">考</i>
+                                    <p><span>(不与其他活动同享)</span>指定菜单下单， 送汤一份
+                                        <span>(手机客户端专享)</span></p>
+                                </div>
+                                <div class="detail-nav">
+                                    <i style="background:#f07373">减</i>
+                                    <p>15减2，30减4<span>(手机客户端专享)</span></p>
+                                </div>
+                                <div class="detail-nav">
+                                    <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
+                                    <p>可使用手机QQ、支付宝、微信进行在线支付</p>
+                                </div>
+                                <div class="deliver-detail">
+                                    <span>0元起送</span>
+                                    <span class="free-delivery">|</span>
+                                    <span class="free-delivery">免费配送</span>
+                                    <span class="free-delivery">|</span>
+                                    <span>平均40分钟送达</span>
+                                </div>
+                                <div class="shop-notice">
+                                    <p>冬日来袭，寒冷的冬天差一份温暖，九品太保将推出特色营养汤粥，美味无比，亲，还在等什么呢？ 快来订餐吧。饿了么理工大学咨询电话15548386939，全国客服热线10105757
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="rmd-block">
-                <div class="rmd-item ">
-                    <a href="#">
-                        <div class="rmd-log">
-                            <div class="log-brand"></div>
-                            <img src="img/r3.jpg" alt="">
-                            <span>22分钟</span>
-                        </div>
-                        <div class="rmd-content">
-                            <div class="rmd-title">香酥风味炸鸡</div>
-                            <div class="rmd-sub">
-                            <span class="rmd-star">
+                <div class="rmd-block">
+                    <div class="rmd-item ">
+                        <a href="#">
+                            <div class="rmd-log">
+                                <img src="img/r2.jpg" alt="">
+                                <span>25分钟</span>
+                            </div>
+                            <div class="rmd-content">
+                                <div class="rmd-title">味鲜盒饭快餐</div>
+                                <div class="rmd-sub">
+                                    <span class="rmd-star">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half-o"></i>
                             </span>
-                                <span class="sales-count">月售600单</span>
+                                    <span class="sales-count">月售1000单</span>
+                                </div>
+                                <div class="rmd-cost">10元起送 / 免费配送</div>
+                                <div class="rmd-schedule">
+                                    <span>可预订，14:00后送餐</span>
+                                </div>
                             </div>
-                            <div class="rmd-cost">10元起送 / 免费配送</div>
+                        </a>
+                    </div>
+                    <div class="rmd-details ">
+                        <div class="rmd-item-detail">
+                            <div class="rmd-title">九品太煲黄焖鸡</div>
                             <div class="rmd-activity">
-                                <i style="background:#f1884f;">考</i>
-                                <i style="background:#3cc791;">增</i>
-                                <i style="background:#3cc791;">增</i>
-                                <i style="background:#f07373">减</i>
-                                <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="rmd-details ">
-                    <div class="rmd-item-detail">
-                        <div class="rmd-title">九品太煲黄焖鸡</div>
-                        <div class="rmd-activity">
-                            <div class="detail-nav">
-                                <i style="background:#f1884f;">考</i>
-                                <p><span>(不与其他活动同享)</span>指定菜单下单，
-                                    送汤一份<span>(手机客户端专享)</span></p>
-                            </div>
-                            <div class="detail-nav">
-                                <i style="background:#f07373">减</i>
-                                <p>15减2，30减4<span>(手机客户端专享)</span></p>
-                            </div>
-                            <div class="detail-nav">
-                                <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
-                                <p>可使用手机QQ、支付宝、微信进行在线支付</p>
-                            </div>
-                            <div class="deliver-detail">
-                                <span>0元起送</span>
-                                <span class="free-delivery">|</span>
-                                <span class="free-delivery">免费配送</span>
-                                <span class="free-delivery">|</span>
-                                <span>平均40分钟送达</span>
-                            </div>
-                            <div class="shop-notice">
-                                <p>冬日来袭，寒冷的冬天差一份温暖，九品太保将推出特色营养汤粥，美味无比，亲，还在等什么呢？
-                                    快来订餐吧。饿了么理工大学咨询电话15548386939，全国客服热线10105757</p>
+                                <div class="detail-nav">
+                                    <i style="background:#f1884f;">考</i>
+                                    <p><span>(不与其他活动同享)</span>指定菜单下单， 送汤一份
+                                        <span>(手机客户端专享)</span></p>
+                                </div>
+                                <div class="detail-nav">
+                                    <i style="background:#f07373">减</i>
+                                    <p>15减2，30减4<span>(手机客户端专享)</span></p>
+                                </div>
+                                <div class="detail-nav">
+                                    <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
+                                    <p>可使用手机QQ、支付宝、微信进行在线支付</p>
+                                </div>
+                                <div class="deliver-detail">
+                                    <span>0元起送</span>
+                                    <span class="free-delivery">|</span>
+                                    <span class="free-delivery">免费配送</span>
+                                    <span class="free-delivery">|</span>
+                                    <span>平均40分钟送达</span>
+                                </div>
+                                <div class="shop-notice">
+                                    <p>冬日来袭，寒冷的冬天差一份温暖，九品太保将推出特色营养汤粥，美味无比，亲，还在等什么呢？ 快来订餐吧。饿了么理工大学咨询电话15548386939，全国客服热线10105757
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="rmd-block">
-                <div class="rmd-item ">
-                    <a href="#">
-                        <div class="rmd-log">
-                            <img src="img/r2.jpg" alt="">
-                            <span>25分钟</span>
-                        </div>
-                        <div class="rmd-content">
-                            <div class="rmd-title">味鲜盒饭快餐</div>
-                            <div class="rmd-sub">
-                            <span class="rmd-star">
+                <div class="rmd-block">
+                    <div class="rmd-item ">
+                        <a href="#">
+                            <div class="rmd-log">
+                                <img src="img/r4.jpg" alt="">
+                                <span>35分钟</span>
+                            </div>
+                            <div class="rmd-content">
+                                <div class="rmd-title">春哥热干面</div>
+                                <div class="rmd-sub">
+                                    <span class="rmd-star">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half-o"></i>
                             </span>
-                                <span class="sales-count">月售1000单</span>
+                                    <span class="sales-count">月售456单</span>
+                                </div>
+                                <div class="rmd-cost">10元起送 / 免费配送</div>
+                                <div class="rmd-activity" style="display: none">
+                                    <i style="background:#f1884f;">考</i>
+                                    <i style="background:#f07373">减</i>
+                                    <i style="background:#f1884f;">9</i>
+                                    <i style="background:#f1884f;">10</i>
+                                    <i style="background:#f1884f;">11</i>
+                                    <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
+                                </div>
+                                <div class="rmd-resting">
+                                    <span>商家休息中，暂不接单</span>
+                                </div>
                             </div>
-                            <div class="rmd-cost">10元起送 / 免费配送</div>
-                            <div class="rmd-schedule">
-                                <span>可预订，14:00后送餐</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="rmd-details ">
-                    <div class="rmd-item-detail">
-                        <div class="rmd-title">九品太煲黄焖鸡</div>
-                        <div class="rmd-activity">
-                            <div class="detail-nav">
-                                <i style="background:#f1884f;">考</i>
-                                <p><span>(不与其他活动同享)</span>指定菜单下单，
-                                    送汤一份<span>(手机客户端专享)</span></p>
-                            </div>
-                            <div class="detail-nav">
-                                <i style="background:#f07373">减</i>
-                                <p>15减2，30减4<span>(手机客户端专享)</span></p>
-                            </div>
-                            <div class="detail-nav">
-                                <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
-                                <p>可使用手机QQ、支付宝、微信进行在线支付</p>
-                            </div>
-                            <div class="deliver-detail">
-                                <span>0元起送</span>
-                                <span class="free-delivery">|</span>
-                                <span class="free-delivery">免费配送</span>
-                                <span class="free-delivery">|</span>
-                                <span>平均40分钟送达</span>
-                            </div>
-                            <div class="shop-notice">
-                                <p>冬日来袭，寒冷的冬天差一份温暖，九品太保将推出特色营养汤粥，美味无比，亲，还在等什么呢？
-                                    快来订餐吧。饿了么理工大学咨询电话15548386939，全国客服热线10105757</p>
+                        </a>
+                    </div>
+                    <div class="rmd-details ">
+                        <div class="rmd-item-detail">
+                            <div class="rmd-title">九品太煲黄焖鸡</div>
+                            <div class="rmd-activity">
+                                <div class="detail-nav">
+                                    <i style="background:#f1884f;">考</i>
+                                    <p><span>(不与其他活动同享)</span>指定菜单下单， 送汤一份
+                                        <span>(手机客户端专享)</span></p>
+                                </div>
+                                <div class="detail-nav">
+                                    <i style="background:#f07373">减</i>
+                                    <p>15减2，30减4<span>(手机客户端专享)</span></p>
+                                </div>
+                                <div class="detail-nav">
+                                    <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
+                                    <p>可使用手机QQ、支付宝、微信进行在线支付</p>
+                                </div>
+                                <div class="deliver-detail">
+                                    <span>0元起送</span>
+                                    <span class="free-delivery">|</span>
+                                    <span class="free-delivery">免费配送</span>
+                                    <span class="free-delivery">|</span>
+                                    <span>平均40分钟送达</span>
+                                </div>
+                                <div class="shop-notice">
+                                    <p>冬日来袭，寒冷的冬天差一份温暖，九品太保将推出特色营养汤粥，美味无比，亲，还在等什么呢？ 快来订餐吧。饿了么理工大学咨询电话15548386939，全国客服热线10105757
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="rmd-block">
-                <div class="rmd-item ">
-                    <a href="#">
-                        <div class="rmd-log">
-                            <img src="img/r4.jpg" alt="">
-                            <span>35分钟</span>
-                        </div>
-                        <div class="rmd-content">
-                            <div class="rmd-title">春哥热干面</div>
-                            <div class="rmd-sub">
-                            <span class="rmd-star">
+                <div class="rmd-block">
+                    <div class="rmd-item ">
+                        <a href="#">
+                            <div class="rmd-log">
+                                <img src="img/r1.png" alt="">
+                                <span>42分钟</span>
+                            </div>
+                            <div class="rmd-content">
+                                <div class="rmd-title">九品太煲黄焖鸡</div>
+                                <div class="rmd-sub">
+                                    <span class="rmd-star">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half-o"></i>
                             </span>
-                                <span class="sales-count">月售456单</span>
+                                    <span class="sales-count">月售1000单</span>
+                                </div>
+                                <div class="rmd-cost">0元起送 / 免费配送</div>
+                                <div class="rmd-activity">
+                                    <i style="background:#3cc791;">增</i>
+                                    <i style="background:#f1884f;">考</i>
+                                    <i style="background:#f07373">减</i>
+                                    <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
+                                </div>
                             </div>
-                            <div class="rmd-cost">10元起送 / 免费配送</div>
-                            <div class="rmd-activity" style="display: none">
-                                <i style="background:#f1884f;">考</i>
-                                <i style="background:#f07373">减</i>
-                                <i style="background:#f1884f;">9</i>
-                                <i style="background:#f1884f;">10</i>
-                                <i style="background:#f1884f;">11</i>
-                                <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
-                            </div>
-                            <div class="rmd-resting">
-                                <span>商家休息中，暂不接单</span>
+                        </a>
+                    </div>
+                    <div class="rmd-details">
+                        <div class="rmd-item-detail">
+                            <div class="rmd-title">九品太煲黄焖鸡</div>
+                            <div class="rmd-activity">
+                                <div class="detail-nav">
+                                    <i style="background:#f1884f;">考</i>
+                                    <p><span>(不与其他活动同享)</span>指定菜单下单， 送汤一份
+                                        <span>(手机客户端专享)</span></p>
+                                </div>
+                                <div class="detail-nav">
+                                    <i style="background:#f07373">减</i>
+                                    <p>15减2，30减4<span>(手机客户端专享)</span></p>
+                                </div>
+                                <div class="detail-nav">
+                                    <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
+                                    <p>可使用手机QQ、支付宝、微信进行在线支付</p>
+                                </div>
+                                <div class="deliver-detail">
+                                    <span>0元起送</span>
+                                    <span class="free-delivery">|</span>
+                                    <span class="free-delivery">免费配送</span>
+                                    <span class="free-delivery">|</span>
+                                    <span>平均40分钟送达</span>
+                                </div>
+                                <div class="shop-notice">
+                                    <p>冬日来袭，寒冷的冬天差一份温暖，九品太保将推出特色营养汤粥，美味无比，亲，还在等什么呢？ 快来订餐吧。饿了么理工大学咨询电话15548386939，全国客服热线10105757
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="rmd-details ">
-                    <div class="rmd-item-detail">
-                        <div class="rmd-title">九品太煲黄焖鸡</div>
-                        <div class="rmd-activity">
-                            <div class="detail-nav">
-                                <i style="background:#f1884f;">考</i>
-                                <p><span>(不与其他活动同享)</span>指定菜单下单，
-                                    送汤一份<span>(手机客户端专享)</span></p>
+                <div class="rmd-block">
+                    <div class="rmd-item ">
+                        <a href="#">
+                            <div class="rmd-log">
+                                <div class="log-brand"></div>
+                                <img src="img/r3.jpg" alt="">
+                                <span>22分钟</span>
                             </div>
-                            <div class="detail-nav">
-                                <i style="background:#f07373">减</i>
-                                <p>15减2，30减4<span>(手机客户端专享)</span></p>
+                            <div class="rmd-content">
+                                <div class="rmd-title">香酥风味炸鸡</div>
+                                <div class="rmd-sub">
+                                    <span class="rmd-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </span>
+                                    <span class="sales-count">月售600单</span>
+                                </div>
+                                <div class="rmd-cost">10元起送 / 免费配送</div>
+                                <div class="rmd-activity">
+                                    <i style="background:#f1884f;">考</i>
+                                    <i style="background:#3cc791;">增</i>
+                                    <i style="background:#3cc791;">增</i>
+                                    <i style="background:#f07373">减</i>
+                                    <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
+                                </div>
                             </div>
-                            <div class="detail-nav">
-                                <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
-                                <p>可使用手机QQ、支付宝、微信进行在线支付</p>
+                        </a>
+                    </div>
+                    <div class="rmd-details ">
+                        <div class="rmd-item-detail">
+                            <div class="rmd-title">九品太煲黄焖鸡</div>
+                            <div class="rmd-activity">
+                                <div class="detail-nav">
+                                    <i style="background:#f1884f;">考</i>
+                                    <p><span>(不与其他活动同享)</span>指定菜单下单， 送汤一份
+                                        <span>(手机客户端专享)</span></p>
+                                </div>
+                                <div class="detail-nav">
+                                    <i style="background:#f07373">减</i>
+                                    <p>15减2，30减4<span>(手机客户端专享)</span></p>
+                                </div>
+                                <div class="detail-nav">
+                                    <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
+                                    <p>可使用手机QQ、支付宝、微信进行在线支付</p>
+                                </div>
+                                <div class="deliver-detail">
+                                    <span>0元起送</span>
+                                    <span class="free-delivery">|</span>
+                                    <span class="free-delivery">免费配送</span>
+                                    <span class="free-delivery">|</span>
+                                    <span>平均40分钟送达</span>
+                                </div>
+                                <div class="shop-notice">
+                                    <p>冬日来袭，寒冷的冬天差一份温暖，九品太保将推出特色营养汤粥，美味无比，亲，还在等什么呢？ 快来订餐吧。饿了么理工大学咨询电话15548386939，全国客服热线10105757
+                                    </p>
+                                </div>
                             </div>
-                            <div class="deliver-detail">
-                                <span>0元起送</span>
-                                <span class="free-delivery">|</span>
-                                <span class="free-delivery">免费配送</span>
-                                <span class="free-delivery">|</span>
-                                <span>平均40分钟送达</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rmd-block">
+                    <div class="rmd-item ">
+                        <a href="#">
+                            <div class="rmd-log">
+                                <img src="img/r2.jpg" alt="">
+                                <span>25分钟</span>
                             </div>
-                            <div class="shop-notice">
-                                <p>冬日来袭，寒冷的冬天差一份温暖，九品太保将推出特色营养汤粥，美味无比，亲，还在等什么呢？
-                                    快来订餐吧。饿了么理工大学咨询电话15548386939，全国客服热线10105757</p>
+                            <div class="rmd-content">
+                                <div class="rmd-title">味鲜盒饭快餐</div>
+                                <div class="rmd-sub">
+                                    <span class="rmd-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </span>
+                                    <span class="sales-count">月售1000单</span>
+                                </div>
+                                <div class="rmd-cost">10元起送 / 免费配送</div>
+                                <div class="rmd-schedule">
+                                    <span>可预订，14:00后送餐</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="rmd-details ">
+                        <div class="rmd-item-detail">
+                            <div class="rmd-title">九品太煲黄焖鸡</div>
+                            <div class="rmd-activity">
+                                <div class="detail-nav">
+                                    <i style="background:#f1884f;">考</i>
+                                    <p><span>(不与其他活动同享)</span>指定菜单下单， 送汤一份
+                                        <span>(手机客户端专享)</span></p>
+                                </div>
+                                <div class="detail-nav">
+                                    <i style="background:#f07373">减</i>
+                                    <p>15减2，30减4<span>(手机客户端专享)</span></p>
+                                </div>
+                                <div class="detail-nav">
+                                    <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
+                                    <p>可使用手机QQ、支付宝、微信进行在线支付</p>
+                                </div>
+                                <div class="deliver-detail">
+                                    <span>0元起送</span>
+                                    <span class="free-delivery">|</span>
+                                    <span class="free-delivery">免费配送</span>
+                                    <span class="free-delivery">|</span>
+                                    <span>平均40分钟送达</span>
+                                </div>
+                                <div class="shop-notice">
+                                    <p>冬日来袭，寒冷的冬天差一份温暖，九品太保将推出特色营养汤粥，美味无比，亲，还在等什么呢？ 快来订餐吧。饿了么理工大学咨询电话15548386939，全国客服热线10105757
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rmd-block">
+                    <div class="rmd-item ">
+                        <a href="#">
+                            <div class="rmd-log">
+                                <img src="img/r4.jpg" alt="">
+                                <span>35分钟</span>
+                            </div>
+                            <div class="rmd-content">
+                                <div class="rmd-title">春哥热干面</div>
+                                <div class="rmd-sub">
+                                    <span class="rmd-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </span>
+                                    <span class="sales-count">月售456单</span>
+                                </div>
+                                <div class="rmd-cost">10元起送 / 免费配送</div>
+                                <div class="rmd-activity" style="display: none">
+                                    <i style="background:#f1884f;">考</i>
+                                    <i style="background:#f07373">减</i>
+                                    <i style="background:#f1884f;">9</i>
+                                    <i style="background:#f1884f;">10</i>
+                                    <i style="background:#f1884f;">11</i>
+                                    <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
+                                </div>
+                                <div class="rmd-resting">
+                                    <span>商家休息中，暂不接单</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="rmd-details ">
+                        <div class="rmd-item-detail">
+                            <div class="rmd-title">九品太煲黄焖鸡</div>
+                            <div class="rmd-activity">
+                                <div class="detail-nav">
+                                    <i style="background:#f1884f;">考</i>
+                                    <p><span>(不与其他活动同享)</span>指定菜单下单， 送汤一份
+                                        <span>(手机客户端专享)</span></p>
+                                </div>
+                                <div class="detail-nav">
+                                    <i style="background:#f07373">减</i>
+                                    <p>15减2，30减4<span>(手机客户端专享)</span></p>
+                                </div>
+                                <div class="detail-nav">
+                                    <i style="background: #fff;color:#FF4E00;border: 1px solid;padding:0">付</i>
+                                    <p>可使用手机QQ、支付宝、微信进行在线支付</p>
+                                </div>
+                                <div class="deliver-detail">
+                                    <span>0元起送</span>
+                                    <span class="free-delivery">|</span>
+                                    <span class="free-delivery">免费配送</span>
+                                    <span class="free-delivery">|</span>
+                                    <span>平均40分钟送达</span>
+                                </div>
+                                <div class="shop-notice">
+                                    <p>冬日来袭，寒冷的冬天差一份温暖，九品太保将推出特色营养汤粥，美味无比，亲，还在等什么呢？ 快来订餐吧。饿了么理工大学咨询电话15548386939，全国客服热线10105757
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
-</div>
-<footer class="ele-footer">
-    <div class="container">
-        <div class="footer-link clearfix">
-            <div class="footer-item">
-                <ul>
-                    <li class="footer-item-title">用户帮助</li>
-                    <li><a href="#">服务中心</a></li>
-                    <li><a href="#">常见问题</a></li>
-                    <li><a href="#">在线客服</a></li>
-                </ul>
-            </div>
-            <div class="footer-item">
-                <ul>
-                    <li class="footer-item-title">商务合作</li>
-                    <li><a href="#">我要开店</a></li>
-                    <li><a href="#">加盟指南</a></li>
-                    <li><a href="#">市场合作</a></li>
-                    <li><a href="#">开放平台</a></li>
-                </ul>
-            </div>
-            <div class="footer-item">
-                <ul>
-                    <li class="footer-item-title">关于我们</li>
-                    <li><a href="#">饿了么结束</a></li>
-                    <li><a href="#">加入我们</a></li>
-                    <li><a href="#">联系我们</a></li>
-                    <li><a href="#">服务协议</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <div class="footer-item-title">
-                    24小时服务热线 :
-                    <a href="#">10105757</a>
+    <footer class="ele-footer">
+        <div class="container">
+            <div class="footer-link clearfix">
+                <div class="footer-item">
+                    <ul>
+                        <li class="footer-item-title">用户帮助</li>
+                        <li><a href="#">服务中心</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">在线客服</a></li>
+                    </ul>
                 </div>
-                <div>意见反馈：
-                    <a href="#">feedback@ele.me</a>
+                <div class="footer-item">
+                    <ul>
+                        <li class="footer-item-title">商务合作</li>
+                        <li><a href="#">我要开店</a></li>
+                        <li><a href="#">加盟指南</a></li>
+                        <li><a href="#">市场合作</a></li>
+                        <li><a href="#">开放平台</a></li>
+                    </ul>
                 </div>
-                <div class="about-us">关于我们 :
-
-                    <div class="icon-wechat" id="icon-wechat">
-
-                        <img src="img/qrcode.png" alt="">
-                        <p>微信号: elemeorder</p>
-                        <p>饿了么网上订餐</p>
-                        <i class="fa fa-caret-down" style="color:#fff;"></i>
+                <div class="footer-item">
+                    <ul>
+                        <li class="footer-item-title">关于我们</li>
+                        <li><a href="#">饿了么结束</a></li>
+                        <li><a href="#">加入我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">服务协议</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-item-title">
+                        24小时服务热线 :
+                        <a href="#">10105757</a>
                     </div>
-                    <a href="#">
-                        <i class="fa fa-weixin" id="footer-weixin"></i>
-                    </a>
-                    <a href="#"><i class="fa fa-weibo"></i></a>
-                    <a href="#"><i class="fa fa-renren"></i></a>
-
+                    <div>意见反馈：
+                        <a href="#">feedback@ele.me</a>
+                    </div>
+                    <div class="about-us">关于我们 :
+                        <div class="icon-wechat" id="icon-wechat">
+                            <img src="img/qrcode.png" alt="">
+                            <p>微信号: elemeorder</p>
+                            <p>饿了么网上订餐</p>
+                            <i class="fa fa-caret-down" style="color:#fff;"></i>
+                        </div>
+                        <a href="#">
+                            <i class="fa fa-weixin" id="footer-weixin"></i>
+                        </a>
+                        <a href="#"><i class="fa fa-weibo"></i></a>
+                        <a href="#"><i class="fa fa-renren"></i></a>
+                    </div>
                 </div>
-
-            </div>
-            <div class="footer-mobile">
-                <a href="#"><img src="img/QR.png" alt=""></a>
-                <div class="mobile-content">
-                    <h3>下载手机版</h3>
-                    <h5>扫一扫,手机订餐方便</h5>
+                <div class="footer-mobile">
+                    <a href="#"><img src="img/QR.png" alt=""></a>
+                    <div class="mobile-content">
+                        <h3>下载手机版</h3>
+                        <h5>扫一扫,手机订餐方便</h5>
+                    </div>
                 </div>
             </div>
+            <div class="footer-end">
+                <p><span>增值电信业务许可证 :</span>
+                    <a href="#">沪B2-20150033</a>
+                    <span>|</span>
+                    <a href="#">沪ICP备 09007032</a>
+                    <span>|</span>
+                    <a href="#">上海工商行政管理</a>
+                    <span> Copyright ©2008-2015 ele.me, All Rights Reserved.</span>
+                </p>
+            </div>
+            <div class="footer-police">
+                <a href="#"><img src="img/polic.jpg" alt=""></a>
+            </div>
         </div>
-        <div class="footer-end">
-            <p><span>增值电信业务许可证 :</span>
-                <a href="#">沪B2-20150033</a>
-                <span>|</span>
-                <a href="#">沪ICP备 09007032</a>
-                <span>|</span>
-                <a href="#">上海工商行政管理</a>
-                <span> Copyright ©2008-2015 ele.me, All Rights Reserved.</span>
-            </p>
+    </footer>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/template" id="template1">
+        <div class="bubble-rmd">
+            <div class="bubble-outside"></div>
+            <div class="bubble-inside"></div>
         </div>
-        <div class="footer-police">
-            <a href="#"><img src="img/polic.jpg" alt=""></a>
-        </div>
-    </div>
-
-
-</footer>
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/app.js"></script>
-<script type="text/template" id="template1">
-     <div class="bubble-rmd">
-         <div class="bubble-outside"></div>
-         <div class="bubble-inside"></div>
-     </div>
-
-</script>
-<script type="text/template" id="template2">
+    </script>
+    <script type="text/template" id="template2">
         <div class="bubble-rmd2">
             <div class="bubble-outside2"></div>
             <div class="bubble-inside2"></div>
         </div>
-</script>
+    </script>
 </body>
+
 </html>

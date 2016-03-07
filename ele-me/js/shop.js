@@ -1,4 +1,10 @@
 $(function(){
+    console.log('test');
+    //点击返回顶端按钮
+    $("#shop-go-top").click(function () {
+        $('html,body').animate({scrollTop:0},600);
+
+    });
 
     var binding = function () {
         var $pn = $(".total-number");
@@ -288,26 +294,11 @@ $(function(){
             }
         });
     //footer位置微信图片的显现
-    $("#footer-weixin").mouseover(function () {
-        $("#icon-wechat").css("display", "block");
-
-    });
-    $("#footer-weixin").mouseout(function () {
-        $("#icon-wechat").css("display", "none");
-
+    $("#footer-weixin").hover(function () {
+        $("#icon-wechat").toggleClass("icon-wechat-hover");
     });
 
-
-
-
-    //点击返回顶端按钮
-    $("#shop-go-top").click(function () 
-	
-		$('html,body').animate({scrollTop:0},600);
-    });
-
-
-
+    
 
 
 });

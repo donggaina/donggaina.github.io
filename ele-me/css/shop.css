@@ -106,7 +106,7 @@ body {
     background-color: #fff;
     width: 100%;
     z-index: 5;
-    /*当height时 隐藏文本，否则点击下面区域 隐藏的div也会出现*/
+    /*当height时隐藏文本，否则点击下面区域 隐藏的div也会出现*/
     overflow: hidden;
     color: #666;
     top:142px;
