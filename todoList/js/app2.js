@@ -71,7 +71,6 @@ $(function () {
     });
     // 删除事件
     $(document).delegate(".close", "click", function () {
-
         var $li = $(this).parent().parent();
         $li.remove();
         if ($li.hasClass("done")) {
