@@ -41,17 +41,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crm.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="crm.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crm.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-67.969696">
-              <caret line="934" column="7" selection-start-line="934" selection-start-column="7" selection-end-line="934" selection-end-column="7" />
+            <state vertical-scroll-proportion="2.119643">
+              <caret line="880" column="54" selection-start-line="880" selection-start-column="54" selection-end-line="880" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="3.jpg" pinned="false" current-in-tab="true">
+      <file leaf-file-name="3.jpg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/img/3.jpg">
           <provider selected="true" editor-type-id="images">
             <state />
@@ -171,7 +171,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ele-me" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
@@ -191,7 +191,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12946428" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -236,17 +236,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-67.969696">
-          <caret line="934" column="7" selection-start-line="934" selection-start-column="7" selection-end-line="934" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/3.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.119643">
+          <caret line="880" column="54" selection-start-line="880" selection-start-column="54" selection-end-line="880" selection-end-column="54" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
