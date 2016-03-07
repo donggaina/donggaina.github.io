@@ -83,7 +83,4 @@ $(function () {
     $("#TaskDone").click(function () {
         $doneList.toggle();
     });
-
-
-
 });

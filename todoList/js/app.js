@@ -1,12 +1,9 @@
-
-
 var store = [
         {'title': '学习JavaScript', 'done': false},
         {'title': '给Alex打电话', 'done': false},
         {'title': '买生日礼物', 'done': false},
         {'title': '看电影', 'done': true},
     ];
-
 
 var vm = new Vue({
 	el:'#todoApp',
@@ -41,6 +38,4 @@ var vm = new Vue({
 			return num;
 		}
 	}
-
-
 });
