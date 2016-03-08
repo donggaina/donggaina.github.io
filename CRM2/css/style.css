@@ -9,7 +9,7 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  min-width: 1000px;
+  min-width: 1120px;
 }
 
 body {
@@ -629,7 +629,7 @@ input::-webkit-input-placeholder {
   display: inline-block;
   line-height: 18px;
   padding: 4px 10px;
-  width: 30px;
+  width: 50px;
   text-align: center;
   border-radius: 3px;
   margin: 0 20px;
@@ -706,198 +706,9 @@ input {
   font-family: inherit;
 }
 
-.have-client {
-  position: relative;
-  width: 100%;
-}
-
-.have-client .table-header {
-  width: 100%;
-  height: 36px;
-  line-height: 36px;
-  background-color: #5acffa;
-  font-size: 14px;
-  color: #fff;
-}
-
-.have-client .table-header tr th:nth-child(2) {
-  text-align: left;
-}
-
-.have-client .table-header tr th:last-child {
-  text-align: left;
-}
-
-.have-client .client-item {
-  height: 60px;
-  line-height: 60px;
-  padding: 5px 10px;
-  position: relative;
-  background-color: #fff;
-  text-align: center;
-  position: relative;
-  margin-bottom: 5px;
-}
-
-.have-client .client-item .add-record {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  background-color: #f5f5f5;
-  padding: 4px 8px;
-  border-radius: 2px;
-  line-height: 20px;
-  height: 20px;
-  cursor: pointer;
-  color: #666;
-}
-
-.have-client .client-item .client-table {
-  width: 100%;
-}
-
-.have-client .client-item tr td:nth-child(2) {
-  text-align: left;
-}
-
-.have-client .client-item tr td:last-child {
-  text-align: left;
-}
-
-.have-client .table-heart {
-  background-position: -255px -140px;
-  width: 24px;
-  height: 20px;
-  margin-left: 13px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.have-client .client-infos .client-name {
-  font-size: 16px;
-}
-
-.have-client .client-infos div {
-  height: 30px;
-  line-height: 30px;
-  color: #666;
-}
-
 .client-page {
   position: relative;
 }
-
-.client-page .filter-header {
-  height: 36px;
-  box-sizing: border-box;
-  line-height: 36px;
-  padding: 0 25px;
-  width: 100%;
-  background-color: #dddfff;
-  color: #333;
-}
-
-.client-page .filter-header .filter-left div {
-  display: inline-block;
-}
-
-.client-page .filter-header .clearbtn {
-  background-position: -458px -354px;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-top: 2px;
-  margin-left: 5px;
-  cursor: pointer;
-}
-
-.client-page .filter-header .select-box {
-  display: inline-block;
-  line-height: 22px;
-  height: 22px;
-  vertical-align: middle;
-  padding: 0 4px;
-  margin-left: 20px;
-  border: 1px solid #4BB43A;
-  border-radius: 3px;
-}
-
-.client-page .filter-header .collect {
-  margin-right: 20px;
-}
-
-.client-page .filter {
-  background-color: #fff;
-  box-sizing: border-box;
-  padding: 10px 25px;
-  width: 100%;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-}
-
-.client-page .filter .fliter-setting {
-  width: 100%;
-  height: 24px;
-  line-height: 24px;
-}
-
-.client-page .filter .fliter-setting a {
-  color: #666;
-  width: 100px;
-  text-align: center;
-  border-radius: 3px;
-}
-
-.client-page .filter .fliter-setting a:hover {
-  background-color: #58B42A;
-  color: #fff;
-}
-
-.client-page .filter .fliter-setting a:hover .settingIcon {
-  background-position: 0px -442px;
-}
-
-.client-page .filter .fliter-setting .settingIcon {
-  background-position: -36px -442px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-}
-
-.client-page .filter-list {
-  background-color: #fff;
-}
-
-.client-page .filter-item {
-  height: 30px;
-  line-height: 30px;
-  padding: 8px 0;
-}
-
-.client-page .filter-item .category {
-  color: #999;
-}
-
-.client-page .c-condition {
-  margin-left: 10px;
-}
-
-.client-page .c-condition li {
-  float: left;
-}
-
-.client-page .c-condition li {
-  padding: 0 5px;
-  margin: 0 12px;
-  display: inline-block;
-  color: #666;
-  cursor: pointer;
-}
-
-.client-page .c-condition li:hover {
-  color: #18B4ED;
-}
-
 .followpage .listHeader {
   background-color: #fff;
   position: relative;
@@ -1078,4 +889,217 @@ input {
 
 .remindPage .task-list .cont-btn a:hover {
   color: #0E5AEA;
+}
+
+
+
+/*修改*/
+/*父类宽度定义100%*/
+.box {
+    position: relative;
+    width: 100%;
+}
+.box-left {
+    margin-left: 30px;
+    margin-right: 290px;
+    min-width: 700px !important;
+}
+.box-right {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    width: 240px;
+}
+
+.client-item {
+    padding-bottom: 8px;
+}
+
+.client-table-thead {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.client-table {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+}
+
+.client-item img {
+    height: 40px;
+    width: 40px;
+}
+
+.client-infos .info-main, .client-infos .info-nav {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(245, 245, 245, 0.75)
+}
+
+.client-table .info-main, .client-table .info-nav {
+    font-size: 12px;
+    color: #666;
+}
+
+td {
+    text-align: center;
+}
+
+.star {
+    font-size: 14px;
+    color: #4cae4c;
+}
+
+.fa-diamond, .fa-phone, .fa-envelope {
+    color: #5bc0de;
+    font-size: 14px;
+}
+
+.title {
+    margin-left: 10px;
+}
+
+.title div {
+    text-align: left !important;
+}
+.client-name{
+    font-size: 14px;
+    font-weight: bold;
+}
+.client-table-first .client-name {
+    color: white;
+}
+
+.client-table .client-name {
+    color: #222;
+}
+
+.avatar input {
+    margin: 0px 10px !important;
+}
+ .avatar img{
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.date-topbar{
+    width: 220px;
+    margin: 10px 10px 20px 10px;
+    background-color: white;
+}
+.date-title {
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(51, 54, 69, 0.11);
+}
+.date-title a{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.date-title .first-event{
+    color: #333;
+    font-weight: bold;
+}
+.date-title .second-event{
+    color: #888;
+    font-size: 12px;
+}
+.date-title i{
+    color: #333;
+    margin-right: 20px;
+    margin-top: 13px;
+}
+.date{
+    background-color: white;
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 12px;
+}
+
+.contact-message img{
+    width: 35px;
+    height: 35px;
+}
+.contact-item{
+    height: 45px;
+    line-height: 45px;
+    margin-top: 5px;
+
+}
+.contact-item span{
+    margin-left: 10px;
+}
+.contact-item .contact-tel{
+    margin-left: 18px;
+    color: #666;
+    font-size: 12px;
+}
+.contact-item .contact-name{
+    color: #333;
+    font-weight: bold;
+}
+.contact-more{
+    text-align: center;
+    padding: 10px 0px;
+}
+.pact-doc{
+    display:table-cell;
+    width: 110px;
+    text-align: center;
+    position: relative;
+}
+.pact-img1,.pact-img2{
+    display: block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+.pact-img1,.pact-img2{
+    background-color: #5cb85c;
+}
+.pact-img2{
+    background-color: #31b0d5;
+}
+.pact-doc i,.pact-pdf i{
+    font-size: 30px;
+    color: white;
+}
+.pact-doc p{
+    color: #999;
+    font-size: 12px;
+}
+.client-item input{
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 3px;
+}
+.client-page .navbar{
+  padding: 0px 30px;
+}
+.btn-client{
+  margin-left: 8px;
+}
+.th-table{
+   background-color: #E8E9EA;
+   padding: 0px 10px;
+   
+}
+.th-table .client-table-thead{
+  font-weight: 500;
+   font-size: 14px;
+}
+.contact-message .more-client{
+  display: inline-block;
+  padding: 2px 5px;
+  background-color: #f6f6f6;
+  border-radius: 3px;
+  color: #666;
 }
