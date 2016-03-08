@@ -1,12 +1,25 @@
 $(function () {
     //切换右侧购物车
-    $(".tabs-item-shop").click(function () {
+    $(".sidebar-tabs").click(function () {
         if ($(".sidebar").css("right") == "-295px") {
             $(".sidebar").animate({right: "0px"}, 300);
         } else {
             $(".sidebar").animate({right: "-295px"}, 300);
         }
     });
+    $(document).click(function (event) {
+         if($(".sidebar").css("right") == "0px"){
+            $(".sidebar").animate({right: "-295px"}, 300);
+         }
+    });
+    // 阻止冒泡
+    $(".sidebar").click(function (event) {
+        if($(".sidebar").css("right") == "0px"){
+            event.stopPropagation();
+        }
+    });
+   
+
 
 
     $(".toggle-cart").click(function () {
