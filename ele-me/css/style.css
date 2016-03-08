@@ -25,7 +25,6 @@ body {
         width: 110px;
     }
 }
-
 @media (min-width: 1260px) {
     .container {
         width: 1180px;
@@ -44,7 +43,7 @@ body {
 .container {
     margin: 0px auto;
 }
-
+/*清浮动*/
 .clearfix:before, .clearfix:after {
     content: "";
     display: table;

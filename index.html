@@ -1,135 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>项目</title>
-	<style>
-		body{
-			
-			font: 16px/1.5 PingFang SC, Lantinghei SC, Helvetica Neue, Microsoft Yahei;
-			background-color: #f5f5f5;
-			color:#333;
-		}
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		h4{
-			font-weight: normal;
-			font-style: 14px;
-
-		}
-		.container{
-			width: 960px;
-			margin: 0px auto;
-			margin-top: 30px;
-			position: relative;
-		}
-		a{
-			display: inline-block;
-			color: #C91752;
-			font-size: 16px;
-			margin: 5px 10px;
-		}
-		div{
-			margin-top: 10px;
-		}
-		.fl{
-			float: left;
-		}
-		ol，ul{
-			margin: 0;
-		}
-		.crm li{
-			line-height: 26px;
-		}
-		.crm a{
-			display: inline-block;
-		}
-		.crm p span,.ele p span{
-			font-size: 15px;
-		}
-		.todo h4{
-			margin: 0;
-			padding: 0;
-		}
-		.todo p{
-			padding: 4px 0;
-			margin: 0;
-		}
-		.home,.shop{
-			float: left;
-			width: 50%;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <title>项目</title>
+    <style>
+    body {
+        font: 14px/1.5 PingFang SC, Lantinghei SC, Helvetica Neue, Microsoft Yahei;
+        background-color: #f5f5f5;
+        color: #555;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        width: 1024px;
+        margin: 0px auto;
+        background: url(img/spring.jpg) no-repeat;
+    }
+    
+    .box {
+        padding: 20px 280px 10px 30px;
+    }
+    
+    a {
+        color: #3879D9;
+        font-size: 16px;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        margin: 0;
+        padding: 0;
+        font-weight: 500;
+    }
+    
+    .pc p {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    
+    li {
+        margin-bottom: 10px;
+    }
+    
+    li span {
+        font-size: 14px;
+        margin-left: 8px;
+    }
+    .tit{
+    	color: #444;
+    }
+    </style>
 </head>
-<body>
-<div class="container">
-	<h3>作品集</h3>
-	<div class="crm">
-		<span>作品1：</span>
-		<p>
-			<a href="./CRM2/crm.html">CRM客户管理系统</a>
-			<span>单页面</span>
-		</p>
-		<p>
-			<a href="./CRM/crm.html">CRM客户页</a>
-			<span>页面布局：左侧和头部位置固定,右侧宽度固定，中间宽度自适应浏览器</span>
-		</p>
-		
-	</div>
-	<div class="ele">
-		<span>作品2：</span>
-		<p class="home">
-			<a href="./ele-me/ele-me.html">饿了么首页</a>
-			<span></span>
-		</p>
-		<p class="shop">
-			<a href="./ele-me/ele-shop.html">饿了么商家页</a>
-			
-			<span>使用模板，添加购物右侧购物车添加，同时dat-it使左侧与右侧绑定</span>
-		</p>
-		
-		
-	</div>
-	<div>
-		<span>作品3：考拉首页</span>
-		<a href="./kaola-PC/kaola.html">PC端</a>
-		<a href="./kaola-Mobile/m-kaola.html">移动端</a>
-	</div>
-	<div>
-		<span>作品4：</span>
-		<a href="./qyer-Mobile/m-qyer.html">穷游网-移动端</a>
-	</div>	
-	<div>
-		<span>作品5：</span>
-		<a href="./meizu/store.html">魅族商城页</a>		
-	</div>
-	<div class="todo">
-		<span>作品6：</span>
-		<span>待办事项todoList</span>
-		<p>	
-			<a href="./todoList/js-todo.html">1：todoList-javascript</a>
-			<h4>使用原生javascript实现对DOM进行元素对象的的创建、查找、添加、移动、删除及属性操作</h4>
-		</p>
-		<p>	
-			<a href="./todoList/jQuery-todo.html">2：todoList-jQuery</a>
-			<h4>使用jQuery实现对DOM的操作,使用template模板创建元素对象</h4>
-		</p>
-		<p>	
-			<a href="./todoList/vue-todo.html">3：todoList-vue</a>
-			<h4>使用vuejs，将DOM交于vue管理，data数据对象管理(代码行数为40，以上两种写法相比，简化代码)</h4>
-			<ul>
-				<li>v-model 指令在表单控件元素上创建数据绑定，添加待办事件</li>
-				<li>实例模板template,并使用v-for指令元素或模板块重复数次,生成待办事件</li>
-				<li>v-on绑定事件监听器,v-on:click监听对象点击事件</li>
-				<li>使用过滤器filterBy，将未完成事件和已完成事件添加到列表</li>
-			</ul>
-		</p>
-	</div>
-	
-	
-</div>
 
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="pc">
+                <h2 class="tit">作品集</h2>
+                <p class="tit">PC端：使用HTML、DIV+CSS实现网页布局，jQuery类库对DOM元素操作</p>
+                <ul>
+                    <li>
+                        <a href="./CRM2/crm.html">CRM客户管理系统</a>
+                        <span>SPA单页面单页面应用，点击左侧规定的分类</span>
+                    </li>
+                    <li>
+                        <a href="./CRM/crm.html">CRM客户页</a>
+                        <span>左侧和头部位置固定,右侧宽度固定，中间宽度自适应浏览器</span>
+                    </li>
+                    <li>
+                        <a href="./kaola-PC/kaola.html">考拉首页</a>
+                        <span>实现商品专区分类；左侧和右侧位置固定；使用bxsilder插件实现图片循环滚播；滚轮达到一定位置，分类条和左右侧实现固定；显示抢购倒计时及回到顶部等功能</span>
+                    </li>
+                    <li>
+                        <a href="./ele-me/ele-me.html">饿了么首页</a>
+                        <span>采用@media媒体查询，中间container实现两种布局；滚轮达到一定位置，排序条在固定顶部；左侧位置固定，“购物车”的商品数量、价格计算和清空功能，“回到顶部”功能；使用伪类:hover动态实现多处元素的状态</span>
+                    </li>
+                    <li>
+                        <a href="./ele-me/ele-shop.html">饿了么商家详情页</a>
+                        <span>实现商品分类查询，切换“菜单栏”实现商品的布局变化；点击左侧“加入购物”，对应生成右侧“购物车“商品，且左右两侧的商品数量及价格绑定，并实现购物车的添加、删除、清空、数量及价格计算等功能</span>
+                    </li>
+                    <li>
+                        <a href="./meizu/store.html">魅族商城页</a>
+                        <span>商品分类，图片轮播</span>
+                    </li>
+                    <li>
+                        <span>待办事项todoList</span>
+                        <p>
+                            <a href="./todoList/js-todo.html">1：todoList-javascript</a>
+                            <h4>使用原生javascript实现对DOM对象的的创建、查找、添加、移动、删除及属性操作</h4>
+                        </p>
+                        <p>
+                            <a href="./todoList/jQuery-todo.html">2：todoList-jQuery</a>
+                            <h4>使用jQuery实现对DOM的操作,使用template模板创建元素对象</h4>
+                        </p>
+                        <p>
+                            <a href="./todoList/vue-todo.html">3：todoList-vue</a>
+                            <h4>使用vuejs框架，将DOM交于vue管理，data数据管理(代码行数为40，以上两种写法相比，简化代码)</h4>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="pc">
+                <p class="tit">移动端：使HTML、DIV+CSS实现网页布局，使用了Zepto框架</p>
+                <ul>
+                    <li>
+                        <a href="./qyer-Mobile/m-qyer.html">穷游网首页</a>
+                        <span>使用@media媒体查询，使样式应用于多种的设备实现合理页面布局；使用swiper插件实现图片轮播；判断用户使用设备，移动端实现tap事件，同时兼容PC端click事件；功能实现：搜索框搜索、点击分类区“更多”查看更多分类、倒计时功能、“游记攻略”中“查看更多”及“回到顶部”等。</span>
+                    </li>
+                    <li>
+                        <a href="./kaola-Mobile/m-kaola.html">考拉首页</a>
+                        <span>使用bxslider插件实现图片轮播，“回到顶部”等功能。</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
