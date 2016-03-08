@@ -5,15 +5,19 @@
 	<title>项目</title>
 	<style>
 		body{
-			margin: 0;
-			padding: 0;
+			
 			font: 16px/1.5 PingFang SC, Lantinghei SC, Helvetica Neue, Microsoft Yahei;
 			background-color: #f5f5f5;
 			color:#333;
 		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
 		h4{
 			font-weight: normal;
 			font-style: 14px;
+
 		}
 		.container{
 			width: 960px;
@@ -30,11 +34,20 @@
 		div{
 			margin-top: 10px;
 		}
-		ol{
+		.fl{
+			float: left;
+		}
+		ol，ul{
 			margin: 0;
 		}
 		.crm li{
 			line-height: 26px;
+		}
+		.crm a{
+			display: inline-block;
+		}
+		.crm p span,.ele p span{
+			font-size: 15px;
 		}
 		.todo h4{
 			margin: 0;
@@ -44,54 +57,68 @@
 			padding: 4px 0;
 			margin: 0;
 		}
+		.home,.shop{
+			float: left;
+			width: 50%;
+		}
 	</style>
 </head>
 <body>
 <div class="container">
 	<h3>作品集</h3>
 	<div class="crm">
-		<span>作品1:</span>
-		<a href="./CRM2/crm.html">项目名称：CRM客户管理系统</a>
-			<ol>
-				<li>项目目的：
-			CRM为使用户同每个客户建立联系，来了解客户的不同需求，提高客户满意度</li>
-				<li>此系统为SPA单页面布局，整个系统就只有一个Web页面，所有的业务功能都是它的子模块，仅在该Web页面初始化时加载相应的HTML、CSS和JavaScript</li>
-				<li>项目目录分为开发目录和上线目录，在nodejs的环境下使用gulp进行项目构建，使用动态语言sass，编译生成的css，压缩项目中css文件和js文件，每个页面都将只加载一个css和一个js，从而减少http请求。</li>
-				<li>使用vue-router的路由和组件从而实现单页面</li>
-			</ol>
+		<span>作品1：</span>
+		<p>
+			<a href="./CRM2/crm.html">CRM客户管理系统</a>
+			<span>单页面</span>
+		</p>
+		<p>
+			<a href="./CRM/crm.html">CRM客户页</a>
+			<span>页面布局：左侧和头部位置固定,右侧宽度固定，中间宽度自适应浏览器</span>
+		</p>
+		
+	</div>
+	<div class="ele">
+		<span>作品2：</span>
+		<p class="home">
+			<a href="./ele-me/ele-me.html">饿了么首页</a>
+			<span></span>
+		</p>
+		<p class="shop">
+			<a href="./ele-me/ele-shop.html">饿了么商家页</a>
+			
+			<span>使用模板，添加购物右侧购物车添加，同时dat-it使左侧与右侧绑定</span>
+		</p>
+		
+		
 	</div>
 	<div>
-		<span>作品2:</span>
-		<a href="./ele-me/ele-me.html">饿了么首页</a>
-		<a href="./ele-me/ele-shop.html">饿了么商家页</a>
-	</div>
-	<div>
-		<span>作品3:考拉首页</span>
+		<span>作品3：考拉首页</span>
 		<a href="./kaola-PC/kaola.html">PC端</a>
 		<a href="./kaola-Mobile/m-kaola.html">移动端</a>
 	</div>
 	<div>
-		<span>作品4:</span>
+		<span>作品4：</span>
 		<a href="./qyer-Mobile/m-qyer.html">穷游网-移动端</a>
 	</div>	
 	<div>
-		<span>作品5:</span>
-		<a href="./meizu/store.html">魅族首页</a>		
+		<span>作品5：</span>
+		<a href="./meizu/store.html">魅族商城页</a>		
 	</div>
 	<div class="todo">
-		<span>作品6:</span>
+		<span>作品6：</span>
 		<span>待办事项todoList</span>
 		<p>	
-			<a href="./todoList/js-todo.html">1.todoList-javascript</a>
+			<a href="./todoList/js-todo.html">1：todoList-javascript</a>
 			<h4>使用原生javascript实现对DOM进行元素对象的的创建、查找、添加、移动、删除及属性操作</h4>
 		</p>
 		<p>	
-			<a href="./todoList/jQuery-todo.html">2.todoList-jQuery</a>
+			<a href="./todoList/jQuery-todo.html">2：todoList-jQuery</a>
 			<h4>使用jQuery实现对DOM的操作,使用template模板创建元素对象</h4>
 		</p>
 		<p>	
-			<a href="./todoList/vue-todo.html">3.todoList-vue</a>
-			<h4>使用vuejs，将DOM交于vue管理，data数据对象管理，(代码行数为40，以上两种写法相比，简化代码)</h4>
+			<a href="./todoList/vue-todo.html">3：todoList-vue</a>
+			<h4>使用vuejs，将DOM交于vue管理，data数据对象管理(代码行数为40，以上两种写法相比，简化代码)</h4>
 			<ul>
 				<li>v-model 指令在表单控件元素上创建数据绑定，添加待办事件</li>
 				<li>实例模板template,并使用v-for指令元素或模板块重复数次,生成待办事件</li>
