@@ -59,7 +59,6 @@ $(function () {
         var s = 0;
         var s2 = 0;
         if (t >= 0) {
-            //d=Math.floor(t/1000/60/60/24);
             h = Math.floor(t / 1000 / 60 / 60 / 24 % 10);
             h2 = Math.floor(t / 1000 / 60 / 60 % 24 % 10);
 
