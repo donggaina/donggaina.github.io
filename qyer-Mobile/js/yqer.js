@@ -1,7 +1,7 @@
 Zepto(function () {
     getTime();
     function getTime() {
-        var endTime = new Date('2016/03/12 00:00:00');
+        var endTime = new Date('2016/03/13 00:00:00');
         var nowTime = new Date();
         var t = endTime.getTime() - nowTime.getTime();
         console.log("t:=="+t);
