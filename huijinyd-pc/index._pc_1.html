@@ -1,0 +1,160 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css/pc-style.css">
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="hjd-left fll"><img class="logoImg" src="images/logo.png"></div>
+                <div class="phone flr"><img src="images/hotline.png"> 免费拨打热线：400-650-7768</div>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="box">
+            <div class="container">
+            <div class="banner-img">
+                <img src="images/banner-02.png" alt="">
+                <a href="#" class="loan-button"></a>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+    <div class="slogan">
+        <div class="container">
+            <div class="slogan-box">
+                <h3>汇金云贷，住房金融领跑者</h3>
+                <span class="title">比银行审手续更简单、放款更迅速、还款方式更灵活。</span>
+                <ul>
+                    <li class="one">
+                        <h4>利率低</h4>
+                        <p>期限2-12个月
+                            <br>完全满足短期资金
+                            <br>中转需要</p>
+                    </li>
+                    <li class="two">
+                        <h4>额度更高</h4>
+                        <p>单个个人贷款金额
+                            <br>20万—1200万</p>
+                    </li>
+                    <li class="three">
+                        <h4>放款快</h4>
+                        <p>放款更迅速
+                            <br>手续更简单
+                            <br>一般48小时即可到帐</p>
+                    </li>
+                    <li class="four">
+                        <h4>利率低</h4>
+                        <p>月息低至1.35%
+                            <br>支持先息后本
+                            <br>还款压力小</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="loan_process">
+        <div class="container">
+            <img src="images/loan_process2.png">
+            <!-- <img src="images/qietu_03.png"> -->
+            <a href="#"><img src="images/button1.jpg"></a>
+        </div>
+    </div>
+    <div class="loan-apply">
+        <div class="container">
+            <div class="loan-detail">
+                <div class="loan-form">
+                    <h4>我要贷款</h4>
+                    <form action="index_pc_2.html" method="post" class="form">
+                        <div class="row">
+                            <label for="select-loan">我要贷款</label>
+                            <div class="select-box">
+                                <input class="checked" type="text" readonly="readonly" placeholder="请选择您的所在城市" autocomplete="off">
+                                <ul class="select">
+                                    <li>北京</li>
+                                    <li>上海</li>
+                                    <li>南京</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="select-loanAmount">借款金额</label>
+                            <div class="select-box">
+                                <input class="checked" type="text" readonly="readonly" placeholder="请输入您要贷款的金额" autocomplete="off">
+                                <ul class="select">
+                                    <li>100万</li>
+                                    <li>200万</li>
+                                    <li>300万</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="name">姓名</label>
+                            <input type="text" name="name" id="name" class="name fll" value="" placeholder="请输入您的真实姓名" tabindex="3" autocomplete="off" />
+                        </div>
+                        <div class="row">
+                            <label for="phone">联系电话</label>
+                            <input type="phone" name="name" id="phone" class="phone fll" value="" placeholder="请输入手机号吗" tabindex="4" autocomplete="off" />
+                        </div>
+                        <div class="row">
+                            <input type="submit" class="submit" value="" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="">
+            <span>Copyright © 北京汇金典当有限公司</span>
+            <span class="footer-info">京ICP备16019593号-2</span>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502030697">
+                <img src="images/footer-info-record.png">
+                <span>京公网安备 11010502030697号</span>
+            </a>
+        </p>
+        <p>全国咨询电话：400-650-7768</p>
+    </footer>
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript">
+    $(function () {
+    $(".select li").click(function() {
+        var obj = $(this);
+        obj.parent('ul').siblings('.checked').val(obj.text());
+        obj.parent('ul').siblings('.checked').removeClass('active');
+
+    });
+
+    // 阻止冒泡
+    $(".checked").click(function() {
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            event.stopPropagation();
+        }
+        var checked = $(".checked");
+        for (var i = 0; i < checked.length; i++) {
+            if (checked.eq(i).hasClass("active")) {
+                checked.eq(i).removeClass("active");
+                $(this).addClass("active");
+            }
+        }
+    });
+    $(document).click(function(event) {
+        if ($(".checked").hasClass('active')) {
+            $(".checked").removeClass('active');
+        }
+    });
+});
+   
+    </script>
+</body>
+
+</html>
