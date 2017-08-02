@@ -1,0 +1,471 @@
+﻿body{
+    font-family: 'Microsoft YaHei',"Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB",\5b8b\4f53,sans-serif;
+    background: #f6f6f6;
+    min-width: 1090px;
+    
+}
+.hjwoo-container{
+    width: 1000px !important;
+    margin: 0 auto;
+}
+.hjwoo-container:before,.hjwoo-container:after{
+    display: table;
+    content: " ";
+}
+.hjwoo-container:after{
+    clear: both;
+}
+.hjwoo-header {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background: #fff;
+    -moz-box-shadow: 0 0 6px 3px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 0 6px 3px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, .3);
+}
+
+.hjwoo-header .hjwoo-container {
+    padding: 0 10px;
+}
+.hjwoo-logo,
+.hjwoo-hotline {
+    height: 70px;
+    line-height: 70px;
+}
+
+.hjwoo-logoImg {
+    margin-right: 10px;
+}
+
+.hjwoo-nav {
+    margin-right: 75px;
+    color: #999;
+    line-height: 28px;
+    margin-top: 40px;
+}
+
+.hjwoo-nav a {
+    display: inline-block;
+    height: 28px;
+    width: 100px;
+    font-size: 16px;
+    text-align: center;
+    color: #999;
+    float: left;
+    border-bottom: 2px solid #bbb;
+}
+
+.hjwoo-nav a.active {
+    color: #ff982e;
+    border-bottom: 3px solid #ff982e;
+}
+
+.hjwoo-nav a:hover {
+    text-decoration: none;
+    color: #ff982e;
+}
+
+.hjwoo-nav a:link {
+    text-decoration: none;
+}
+
+.hjwoo-banner{
+    position: relative;
+    height: 600px;
+    background: url("../img/1-001-banner-image.jpg") no-repeat 50% 0;
+    background-size: 100% 100%;
+}
+.hjw-box{
+    position: relative;
+    height: 600px;
+}
+.banner-box{
+   margin-top: 118px;
+}
+.banner-title{
+    margin-left: 145px;
+}
+.banner-describe{
+    margin-left: 150px;
+}
+.banner-describe h3{
+    font-size: 18px;
+    margin: 0;
+    line-height: 34px;
+    font-weight: 500;
+}
+.hjw-code{
+    position: absolute;
+    text-align: center;
+    top: 280px;
+    right: 154px;
+}
+.hjw-code span{
+    display: block;
+    background-color: #a40000;
+    width: 160px;
+    line-height: 50px;
+    padding: 0 2px;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 10px;
+}
+.banner-describe{
+    margin-top: 50px;
+}
+
+.hjwoo-slogan{
+    background-color: #fff;
+    height: 800px;
+    position: relative;
+}
+.hjwoo-slogan .slogan-box{
+    padding: 120px 0;
+}
+.slogan-item{
+    text-align: center;
+    height: 234px;
+    padding:0;
+}
+.slogan-firstList{
+    margin-bottom: 92px;
+}
+.slogan-desc h3{
+    margin-top: 40px;
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+.slogan-icon{
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    background: no-repeat 50% 50%;
+    background-size: 100% 100%;
+}
+
+.icon-quick{
+    background: url("../img/2-001-icon-quick.png");
+}
+.icon-high{
+    background: url("../img/2-002-icon-high.png");
+}
+.icon-rate{
+    background: url("../img/2-003-icon-rate.png");
+}
+.icon-charge{
+    background: url("../img/2-004-icon-charge.png");
+}
+.icon-protect{
+    background: url("../img/2-005-icon-protect.png");
+}
+.icon-brokerage{
+    background: url("../img/2-006-icon-brokerage.png");
+}
+.hjwoo-businessArea{
+    height: 800px;
+    background-color: #e9f1da;
+}
+.area-title{
+    margin:56px 0 17px;
+    font-size: 48px;
+    color: #9f7d50;
+    text-align: center;
+}
+.hjwoo-promise{
+    background-color: #ffb817;
+    height: 800px;
+}
+.hjwoo-box{
+    position: relative;
+}
+.promise-context{
+    margin-top: 96px;
+    text-align: center;
+}
+.hjwoo-relation{
+    margin-top: 64px;
+}
+.more-link{
+    position: absolute;
+    right: 10px;
+    bottom: -90px;
+}
+.hjwoo-promise2{
+    background-color: #fff;
+    height: 800px;
+}
+.promise-context2{
+    text-align: center;
+    margin-top: 90px;
+}
+.flow-chart{
+    margin-top: 72px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 660px;
+}
+.promise-word{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 60px;
+    color: #666;
+}
+.hjwoo-promise3{
+    position: relative;
+    height: 800px;
+    background: url("../img/6-005-image-background.jpg") no-repeat 50% 0;
+    background-size: 100% 100%;
+}
+.promise-context3{
+    text-align: center;
+    margin-top: 110px;
+}
+.hjwoo-promise3 ul{
+    width: 100%;
+    padding: 0 120px;
+    margin:108px 0 0;
+    text-align: center;
+}
+.hjwoo-promise3 ul li{
+    padding:0;
+}
+.hjwoo-promise3 ul li h3{
+    text-align: center;
+    color: #fff;
+}
+.hjwoo-serviceProcess{
+    height: 800px;
+    background-color: #f4f4ef;
+}
+.hjwoo-serviceProcess .service-title{
+    margin:124px 0 104px;
+    font-size: 48px;
+    text-align: center;
+    color: #9f7d50;
+}
+
+
+.hjwoo-footer {
+    position: relative;
+    height: 150px;
+    background-color: #d9d9d1;
+    color: #888;
+    width: 100%;
+}
+
+.about-us,
+.ooperative-agency {
+    position: relative;
+    text-align: center;
+    height: 24px;
+    font-size: 14px;
+}
+
+.about-us {
+    padding: 0 176px;
+    margin: 25px 0 20px;
+}
+
+.cooperative-agency {
+    padding: 0 273px;
+    margin-bottom: 20px;
+}
+
+.about-us li,
+.cooperative-agency li {
+    padding: 0 20px 0 21px;
+    border-left: 1px solid #888;
+}
+
+.about-us li.active,
+.cooperative-agency li.active {
+    border-left: none;
+    padding: 0 5px 0 0;
+}
+
+.about-us li img {
+    margin-right: 10px;
+}
+
+.footer-Code {
+    position: absolute;
+    right: 90px;
+    top: 28px;
+}
+
+/*关于我们*/
+
+/* .hjwoo-header.active
+ {
+    position: fixed;
+    z-index: 10;
+}
+.hjwoo-footer.active {
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
+
+.hjwoo-aboutUs,.hjwoo-Qa  {
+    padding: 50px 10px 30px;
+}
+
+.hjwoo-aboutUs {
+    font-size: 14px;
+}
+
+.introduce-title {
+    font-size: 30px;
+    margin-bottom: 22px;
+}
+
+.introduce-sub {
+    color: #bfbfbf;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.hjwoo-aboutUs p {
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.hjwoo-team {
+    margin: 34px 0 80px;
+}
+
+.hjwoo-team ul {
+    padding-left: 50px;
+}
+
+.hjwoo-team ul li {
+    line-height: 30px;
+}
+
+.hjwoo-team .media-body h4 {
+    text-indent: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/*黄金宝典*/
+
+.hjwooQa-box {
+    width: 800px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.hjwoo-Qa .introduce-title {
+    margin-bottom: 28px;
+}
+
+.hjwooQa-item {
+    margin-bottom: 40px;
+}
+
+.hjwooQa-item:last-child {
+    margin-bottom: 30px;
+}
+
+.hjwooQa-item h4 {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    color: #f39800;
+}
+
+.hjwooQa-ask .hjwooQa-arrow {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.hjwooQa-item .answer-list {
+    padding-left: 26px;
+}
+
+.hjwooQa-answer {
+    margin-bottom: 0;
+}
+
+.hjwooQa-answer,
+.hjwooQa-item .answer-list li {
+    line-height: 30px;
+}
+.footer-info{
+    margin-left: 4px;
+}
+
+.go-top {
+    display: none;
+    width: 40px;
+    height: 32px;
+    position: fixed;
+    right: 50px;
+    cursor: pointer;
+    bottom: 165px;
+    border-radius: 4px;
+    background-color: #777;
+}
+
+.bubble-rmd{
+    position: relative;
+    z-index: 10;
+    left:8px;
+    top:-3px;
+}
+.goTop-bubble{
+    position: absolute;
+    z-index: 10;
+    right:-15px;
+    top:8px;
+    border: 8px solid;
+    border-color: transparent  transparent transparent #777;
+}
+.bubble-outside, .bubble-inside {
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+}
+.bubble-outside{
+    border: 12px solid;
+    border-color: transparent  transparent #e6e6e6 transparent  ;
+}
+.bubble-outside.active{
+    border-color: transparent  transparent #F74342 transparent  ;
+}
+.bubble-inside{
+    border: 8px solid;
+    left: 4px;
+    top: 10px;
+    border-color:transparent  transparent  #777 transparent   ;
+}
+.goTop-alert{
+    line-height: 26px;
+    position: absolute;
+    z-index: 10;
+    width: 80px;
+    text-align: center;
+    top: 2px;
+    left: -92px;
+    color: white;
+    background-color: #777;
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 2px 10px;
+}
+.hjwooFooter-info a{
+    color: #888;
+    margin-left: 10px;
+}
+.hjwooFooter-info a:hover{
+    color: #9f7d50;
+    text-decoration: none;
+}

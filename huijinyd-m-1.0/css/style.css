@@ -1,0 +1,631 @@
+.header {
+	height: 3.7rem;
+	line-height: 3.4rem;
+	text-align: center;
+	padding: 0 1.5rem;
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	background:url("../img/headerbg.jpg") no-repeat bottom center;
+	background-color: #fff;
+	background-size: 100% 0.3rem;
+}
+.header .logo {
+	display: inline-block;
+}
+.logo .name {
+	font-size: 1.2rem;
+	color: #000;
+	margin-left: .5rem;
+}
+.barIcon img {
+	width: 1.8rem;
+	height: 1.3rem;
+}
+.header .logo {
+	font-size: 1rem;
+	color: #000;
+}
+.header .logo img {
+	width: 2.6rem;
+	height: 2.6rem;
+}
+.p-icon img {
+	width: 1.6rem;
+	height: 1.6rem;
+}
+/*侧边*/
+.menu {
+    position: fixed;
+    z-index: 10;
+    width: 60%;
+    background-color:  rgba(6,5,5,0.9);
+    top: 3.4rem;
+    padding:2rem 0 2rem .5rem;
+}
+
+
+.menu ul li {
+    border-bottom: 1px solid #393939;
+    line-height: 5rem;
+    height: 5rem;
+}
+.menu ul li a{
+	 color: #fff;
+	 font-size: 1.5rem;
+}
+.menu ul li .iconItem{
+	display: inline-block;
+	width: 1.6rem;
+	height: 1.6rem;
+	margin: -.2rem 1.5rem 0 1.2rem;
+	vertical-align: middle;
+}
+.icon-book{
+	background: url("../img/icon-book.png") no-repeat;
+	background-size: 100% 100%;
+}
+.icon-heart{
+	background: url("../img/icon-heart.png") no-repeat;
+	background-size: 100% 100%;
+}
+.icon-bag{
+	background: url("../img/icon-bag.png") no-repeat;
+	background-size: 100% 100%;
+}
+.icon-house{
+	background: url("../img/icon-house.png") no-repeat;
+	background-size: 100% 100%;
+}
+.icon-chart{
+	background: url("../img/icon-chart.png") no-repeat;
+	background-size: 100% 100%;
+}
+.icon-pencil{
+	background: url("../img/icon-pencil.png") no-repeat;
+	background-size: 100% 100%;
+}
+.banner {
+	height: 18rem;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+.banner img {
+	width: 100%;
+	height: 18rem;
+}
+.loan-apply {
+	padding: 1.8rem 0 1.5em;
+}
+.loan-apply .select {
+	display: none;
+}
+.loan-apply h4 {
+	text-align: center;
+	font-size: 1.5rem;
+	margin-bottom:1rem;
+}
+.row {
+	margin-bottom: 1rem;
+}
+.row:last-child {
+	margin-bottom: 0;
+	margin-top: 1.5rem;
+}
+.select-box .checked {
+	background: url(../img/select.png) no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 3.5rem;
+	line-height: 3.5rem;
+	border: none;
+ 	text-indent: .8rem;
+	font-size: 1.4rem;
+	font-family: inherit;
+}
+.row .select-box .checked:focus {
+	background: url(../img/select-focus.png) no-repeat;
+	background-size: 100% 100%;
+}
+.row .select-box .select {
+	position: absolute;
+	padding: 0 3.2rem;
+	background: #fff;
+ 	text-indent: .8rem;
+	border-top: none;
+	text-align: left;
+	display: none;
+	left: 0;
+	right: 0;
+}
+.select-box .select ul {
+	border: 2px solid #cb9b2d;
+	border-top: none;
+}
+.select ul {
+	max-height: 11rem;
+	overflow: auto;
+ 	padding: .2rem 0;
+}
+.checked.active+.select {
+	display: block;
+}
+.select li {
+	line-height: 2rem;
+	font-size: 1.3rem;
+}
+.select li:hover {
+	color: #666;
+}
+.row input.inputField {
+	background: url(../img/input.png) no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 3.5rem;
+	line-height: 3.5rem;
+	border: none;
+ 	text-indent: .8rem;
+	font-size: 1.3rem;
+	font-family: inherit;
+}
+.row input.inputField:focus {
+	background: url(../img/input-focus.png) no-repeat;
+	background-size: 100% 100%;
+}
+.row .submit {
+	background: url(../img/button-bg.jpg) no-repeat;
+	width: 100%;
+	background-size: 100% 100%;
+	height: 3.3rem;
+	line-height: 3.3rem;
+	color: #000;
+	font-size: 1.4rem;
+	font-family: inherit;
+	text-shadow: 0 1px 2px #333;
+}
+.service {
+    background-color: #f4f2e5;
+    font-size: 1.2rem;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    text-align: center;
+}
+.service img {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: .4rem;
+}
+.hotline-number {
+    font-family: Constantia;
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: #000;    
+}
+.feature {
+	text-align: center;
+	padding: 1.2rem 0 2.4rem;
+}
+.feature .f-item {
+	width: 7.5rem;
+	height: 7.5rem;
+	margin: 0 auto;
+}
+.f-item.item1 {
+	background: url(../img/feature-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.f-item.item2 {
+	background: url(../img/feature-2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.f-item.item3 {
+	background: url(../img/feature-3.png) no-repeat;
+	background-size: 100% 100%;
+}
+.feature h4 {
+	font-size: 1.2rem;
+	color: #574316;
+ 	margin-top: .6rem;
+}
+.advantage {
+	background-color: #f4f2e5;
+	padding: 1.5rem 0;
+}
+.advantage-box {
+	padding: 0 3.1rem;
+	margin: 0px auto;
+	position: relative;
+}
+.advantage h3 {
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+.advantageList li {
+	width: 100%;
+	height: 3.6rem;
+ 	margin-bottom: .5rem;
+	padding-left: 1rem;
+	position: relative;
+}
+.advantageList li:last-child {
+	margin-bottom: 0;
+}
+.advantageList .item-1 {
+	background: url(../img/a-bg-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.advantageList .item-2 {
+	background: url(../img/a-bg-2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.advantageList .item-3 {
+	background: url(../img/a-bg-3.png) no-repeat;
+	background-size: 100% 100%;
+}
+.advantageList .item-4 {
+	background: url(../img/a-bg-4.png) no-repeat;
+	background-size: 100% 100%;
+}
+.advantageList .a-item .title {
+	font-size: 1.3rem;
+	line-height: 3.6rem;
+	display: inline-block;
+}
+.advantageList .a-item b {
+ 	margin-left: .2rem;
+}
+.advantageList .a-item .desc {
+	font-size: 1rem;
+	height: 3.6rem;
+ 	padding: .4rem 0;
+	line-height: 1.4rem;
+}
+.desc span {
+	display: block;
+}
+.sepLine {
+	width: 1px;
+	height: 2.5rem;
+	margin:.5rem 1.2rem .5rem .7rem;
+	display: inline-block;
+}
+.item-1 .sepLine {
+	background-color: #dba001;
+}
+.item-2 .sepLine {
+	background-color: #8ab37e;
+}
+.item-3 .sepLine {
+	background-color: #5456a7;
+}
+.item-4 .sepLine {
+	background-color: #cc4776;
+}
+.digit {
+	font-size: 1.5rem;
+	font-weight: 600;
+	font-family: Impact;
+}
+.company-info {
+	text-align: center;
+	color: #9e9e9e;
+ 	font-size: .9rem;
+	height: 4.2rem;
+ 	padding: .8rem 0;
+}
+.company-info p {
+	line-height: 1.3rem;
+}
+.footer {
+	height: 4rem;
+	line-height: 4rem;
+	background-color: #000;
+	text-align: center;
+	padding: 0 4.3rem;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+}
+.footer a {
+	font-size: 1.2rem;
+	color: #b98000;
+	display: inline-block;
+}
+.footer .hotlineIcon {
+	width: 2.8rem;
+	height: 2.8rem;
+}
+
+
+.valuation-banner {
+	height: 20rem;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+.valuation-banner img {
+	height: 20rem;
+	width: 100%;
+}
+.valuation-flow {
+	padding: 1.8rem 0 2.2rem;
+}
+.valuation-flow .flow-box {
+	padding: 0 1.4rem;
+}
+.estateInfo-form {
+	padding: 0 2.2rem;
+}
+.estateInfo-form .cells {
+	height: 3.4rem;
+	line-height: 3.4rem;
+	font-size: 1.4rem;
+	background: url(../img/input-bg1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.estateInfo-form .cells.cell-select {
+	background: url(../img/select-bg1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.cell-label label {
+	color: #606060;
+	display: block;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.cell-primary input {
+	color: #000;
+	font-size: 1.4rem;
+	width: 100%;
+ 	padding-left: .8rem;
+ 	font-family: inherit;
+ 	background:none;
+}
+.cell-select .cell-primary {
+	position: relative;
+}
+.cell-primary .select {
+	width: 100%;
+	position: absolute;
+	z-index:5;
+	border:1px solid #cb9b2d;
+	background: #fff;
+ 	text-indent: .8rem;
+	border-top: none;
+	display: none;
+	margin-top: 1px;
+}
+.cell-select .checked {
+	font-family: inherit;
+}
+.cell-primary ul{
+	/*padding: 1.7rem 0;*/
+}
+.apply-success {
+	padding: 9.5rem 0 13rem;
+	text-align: center;
+}
+.apply-success img {
+	width: 7.2rem;
+	height: 7.5rem;
+}
+.apply-success h3 {
+	font-size: 1.9rem;
+	margin: 3rem 0 2.2rem;
+}
+.apply-success h4 {
+	font-size: 1.1rem;
+	color: #a6a6a6;
+	line-height: 1.5rem;
+}
+.success-service {
+	height: 6rem;
+	background-color: #f4f2e5;
+	text-align: center;
+	line-height: 2rem;
+	padding: 1rem 0;
+	font-size: 1.2rem;
+}
+.success-service .hotline-number {
+	font-size: 2.4rem;
+}
+
+/*公司简介*/
+.banner-int {
+    height: 20.25rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+.banner-int img{
+	width: 100%;
+	height: 20.25rem;
+}
+.loan-apply h3{
+	font-size: 1.4rem;
+	color: #000;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+.loan-apply .int{
+	width: 100%;
+	font-size: 1.2rem;
+	line-height: 1.9rem;
+	color: #5b5b5b;
+	text-indent:2.5rem;
+	background: url(../img/linebg.jpg) no-repeat bottom;
+	padding-bottom: 2rem;
+}
+.partner{
+	text-align: center;
+}
+.partner h3{
+	padding:0 0 2rem;
+}
+.partner-img{
+	width: 100%;
+	background: url(../img/linebg.jpg) no-repeat bottom;
+	padding-bottom: 0.9rem;
+}
+.partner-img img{
+	margin:0 0 2rem;
+}
+.partner-img .img1{
+	width: 9rem;
+	height: 3.1rem;
+	margin-right: 1rem;
+}
+.partner-img .img2{
+	width: 10rem;
+	height: 3.1rem;
+}
+.partner-img .img3{
+	width: 6rem;
+	height: 3.1rem;
+	margin-right: 1rem;
+}
+.partner-img .img4{
+	width: 12rem;
+	height: 3.1rem;
+}
+.partner-img .img5{
+	width: 10rem;
+	height: 3.1rem;
+	margin-right: 1rem;
+}
+.partner-img .img6{
+	width: 9rem;
+	height: 3.1rem;
+}
+.condetails{
+	text-align: center;
+	padding:2rem 0;
+}
+.condetails h3{
+	padding:0 0 1.8rem;
+}
+.condetails p{
+	font-size: 1.5rem;
+}
+.condetails .number{
+	color: #d29e00;
+	font-weight: bold;
+	line-height: 2.1rem;
+}
+.condetails .condp{
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	padding-top: 0.2rem;
+	color: #313131;
+}
+/*关于汇金云贷*/
+.loan-apply .about{
+	width: 100%;
+	font-size: 1.2rem;
+	line-height: 1.9rem;
+	color: #5b5b5b;
+}
+.advantages, .forpeople{
+	text-align: center;
+	margin-bottom: 1.3rem;
+}
+.advantages h3{
+	height: 2.85rem;
+	background:url(../img/linebg.jpg) no-repeat center center;
+}
+.advantages h3 img, .forpeople h3 img{
+	width: 10.8rem;
+	height: 2.85rem;
+}
+.advantages-ul{
+	font-size: 1.2rem;
+	line-height: 2.9rem;
+	margin-top: 1rem;
+}
+.forpeople h3{
+	height: 2.85rem;
+	background:url(../img/about-bg1.jpg) no-repeat center center;
+}
+.forpeople p{
+	font-size: 1.2rem;
+	line-height: 2rem;
+	margin-top: 1rem;
+}
+/*媒体中心*/
+.media-title{
+	margin-top: 2rem;
+}
+.media-title .media-titone, .media-title .media-tittwo{
+	display: inline-block;
+	width: 7.5rem;
+	height: 2.4rem;
+}
+.media-con{
+	height: 9rem;
+	padding:2rem 0;
+	background: url(../img/linebg.jpg) no-repeat bottom center;
+}
+.media-con img{
+	float: right;
+	width: 6.65rem;
+	height: 6rem;
+}
+.media-con p{
+	width: 17rem;
+	font-size: 1.4rem;
+	line-height: 1.9rem;
+}
+.media-con p a{
+	color: #000;
+	display: block;
+	margin-top: -0.3rem;
+}
+.media-con p span{
+	font-size: 0.9rem;
+	color: #8b8b8b;
+	display: block;
+	margin-top: 1rem;
+}
+.refresh{
+	height: 4rem;
+	text-align: center;
+}
+.refresh img{
+	width: 1.8rem;
+	height: 1.8rem;
+	margin:1.1rem 0;
+}
+/*媒体中心 内容页*/
+.media-infotitle{
+	height: 10.7rem;
+	padding:3rem 0 1.8rem;
+	background: url(../img/linebg.jpg) no-repeat bottom center;
+}
+.media-infotitle h3{
+	font-size: 1.4rem;
+	line-height: 1.9rem;
+}
+.media-infotitle p{
+	font-size: 0.9rem;
+	line-height: 1rem;
+	color: #8b8b8b;
+	margin-top: 1.2rem;
+}
+.media-infotitle p span{
+	margin-left: 1rem;
+}
+.media-infocon{
+	padding:1.5rem 0 2rem;
+	margin-bottom: 1.5rem;
+	background: url(../img/linebg.jpg) no-repeat bottom center;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	color: #4c4c4c;
+}
+.media-infocon p{
+	margin: 0.9rem 0;
+}
